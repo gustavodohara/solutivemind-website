@@ -17,4 +17,3 @@ test.describe('Home Page', () => {
     // Los tests específicos de navegación se agregarán en Fase 3
   })
 })
-¨

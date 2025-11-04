@@ -84,7 +84,7 @@ export const CONTACT_INFO = {
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Archivo se importa sin errores TypeScript
+- [x] Archivo se importa sin errores TypeScript
 
 ---
 
@@ -154,7 +154,7 @@ export function Header() {
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Componente compila sin errores TypeScript
+- [x] Componente compila sin errores TypeScript
 
 ---
 
@@ -202,7 +202,7 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Componente compila sin errores
+- [x] Componente compila sin errores
 
 #### Manual Verification:
 - [ ] Sheet se abre y cierra correctamente en mobile
@@ -294,7 +294,7 @@ export function Footer() {
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Componente compila sin errores
+- [x] Componente compila sin errores
 
 #### Manual Verification:
 - [ ] Footer se muestra correctamente
@@ -395,8 +395,8 @@ export default function RootLayout({
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] `npm run build` compila sin errores
-- [ ] No hay errores TypeScript
+- [x] `npm run build` compila sin errores
+- [x] No hay errores TypeScript
 
 #### Manual Verification:
 - [ ] Header y Footer aparecen en todas las páginas

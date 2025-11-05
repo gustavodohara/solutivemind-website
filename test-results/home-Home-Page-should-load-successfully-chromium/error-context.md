@@ -1,0 +1,334 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+      - /url: "#mainContent"
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - 'link "USE CODE: VIP2025 FOR OVER 60% OFF + 2 FREE GIFTS" [ref=e7] [cursor=pointer]':
+          - /url: /quiz/start/?promo=VIP2025
+          - generic [ref=e9]:
+            - paragraph [ref=e10]: "USE CODE: VIP2025"
+            - paragraph [ref=e11]: FOR OVER 60% OFF + 2 FREE GIFTS
+        - link "30% OFF SKINSPECIFIC ROUTINES WITH CODE SSBF25" [ref=e12] [cursor=pointer]:
+          - /url: /collections/routine-and-bundles
+          - generic [ref=e14]:
+            - paragraph [ref=e15]: 30% OFF SKINSPECIFIC
+            - paragraph [ref=e16]: ROUTINES WITH CODE SSBF25
+        - 'link "USE CODE: VIP2025 FOR OVER 60% OFF + 2 FREE GIFTS" [ref=e17] [cursor=pointer]':
+          - /url: /quiz/start/?promo=VIP2025
+          - generic [ref=e19]:
+            - paragraph [ref=e20]: "USE CODE: VIP2025"
+            - paragraph [ref=e21]: FOR OVER 60% OFF + 2 FREE GIFTS
+        - link "30% OFF SKINSPECIFIC ROUTINES WITH CODE SSBF25" [ref=e22] [cursor=pointer]:
+          - /url: /collections/routine-and-bundles
+          - generic [ref=e24]:
+            - paragraph [ref=e25]: 30% OFF SKINSPECIFIC
+            - paragraph [ref=e26]: ROUTINES WITH CODE SSBF25
+      - generic [ref=e27]:
+        - link "PROVEN" [ref=e28] [cursor=pointer]:
+          - /url: /
+          - img "PROVEN" [ref=e29]
+        - generic [ref=e30]:
+          - list [ref=e34]:
+            - listitem [ref=e35]:
+              - generic [ref=e36] [cursor=pointer]:
+                - generic [ref=e37]: Skin Quiz Skin Quiz
+                - img [ref=e38]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: 
+                      - generic: 
+                      - generic: 
+                      - generic: 
+                      - generic: 
+                      - generic: 4.6 star rating
+                    - link "8227 reviews":
+                      - /url: javascript:void(0)
+                      - text: 8227 Reviews
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: 
+                      - generic: 
+                      - generic: 
+                      - generic: 
+                      - generic: 
+                      - generic: 4.7 star rating
+                    - link "54 reviews":
+                      - /url: javascript:void(0)
+                      - text: 54 Reviews
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: 
+                      - generic: 
+                      - generic: 
+                      - generic: 
+                      - generic: 
+                      - generic: 4.9 star rating
+                    - link "116 reviews":
+                      - /url: javascript:void(0)
+                      - text: 116 Reviews
+            - listitem [ref=e40]:
+              - generic [ref=e41] [cursor=pointer]:
+                - generic [ref=e42]: Shop Shop
+                - img [ref=e43]
+            - listitem [ref=e45]:
+              - generic [ref=e46] [cursor=pointer]:
+                - generic [ref=e47]: Learn Learn
+                - img [ref=e48]
+            - listitem [ref=e50]:
+              - link "Reviews Reviews" [ref=e51] [cursor=pointer]:
+                - /url: /reviews
+                - generic [ref=e52]: Reviews Reviews
+          - generic [ref=e53]:
+            - button [ref=e54] [cursor=pointer]:
+              - img [ref=e55]
+            - link "0" [ref=e58] [cursor=pointer]:
+              - /url: /cart
+              - img [ref=e59]
+              - generic [ref=e62]: "0"
+    - main [ref=e63]:
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - img "Hero Quiz" [ref=e68]
+          - generic [ref=e70]:
+            - paragraph [ref=e71]: BLACK FRIDAY EARLY ACCESS
+            - heading "Get your personalized 3-Step Skincare Routine for only $75" [level=1] [ref=e72]:
+              - generic [ref=e73]:
+                - text: Get your personalized
+                - text: 3-Step Skincare
+                - text: Routine for only
+              - text: $75
+            - generic [ref=e74]:
+              - paragraph [ref=e75]: Our best price yet, here for a limited time. Don’t miss out!
+              - button "Get My Routine" [ref=e76] [cursor=pointer]
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e81]: 13K+
+            - generic [ref=e82]:
+              - list [ref=e83]:
+                - img [ref=e84]
+                - img [ref=e86]
+                - img [ref=e88]
+                - img [ref=e90]
+                - img [ref=e92]
+              - paragraph [ref=e94]: 5 star reviews
+          - generic [ref=e96]:
+            - generic [ref=e97]:
+              - generic [ref=e98]: Personalized, Patented, PROVEN
+              - generic [ref=e100]: .
+            - generic [ref=e101]:
+              - generic [ref=e102]: Cruelty-free
+              - generic [ref=e104]: .
+            - generic [ref=e105]:
+              - generic [ref=e106]: Dermatologist tested
+              - generic [ref=e108]: .
+            - generic [ref=e109]:
+              - generic [ref=e110]: Clean, non-toxic ingredients
+              - generic [ref=e112]: .
+            - generic [ref=e113]:
+              - generic [ref=e114]: Made in the USA
+              - generic [ref=e116]: .
+            - generic [ref=e117]:
+              - generic [ref=e118]: Personalized, Patented, PROVEN
+              - generic [ref=e120]: .
+            - generic [ref=e121]:
+              - generic [ref=e122]: Cruelty-free
+              - generic [ref=e124]: .
+            - generic [ref=e125]:
+              - generic [ref=e126]: Dermatologist tested
+              - generic [ref=e128]: .
+            - generic [ref=e129]:
+              - generic [ref=e130]: Clean, non-toxic ingredients
+              - generic [ref=e132]: .
+            - generic [ref=e133]:
+              - generic [ref=e134]: Made in the USA
+              - generic [ref=e136]: .
+        - generic [ref=e140]:
+          - generic [ref=e144]:
+            - 'link "Selected item image Bestseller Personalized Essential System Three powerful steps: Cleanse, Hydrate, Protect $129.99" [ref=e146] [cursor=pointer]':
+              - /url: /personalized-subscription
+              - img "Selected item image" [ref=e148]
+              - generic [ref=e149]:
+                - generic [ref=e150]: Bestseller
+                - heading "Personalized Essential System" [level=3] [ref=e151]
+                - paragraph [ref=e152]: "Three powerful steps: Cleanse, Hydrate, Protect"
+                - generic [ref=e153]: $129.99
+            - link "Selected item image Personalized Cleanser A creamy, gentle formula to cleanse and refresh skin without over-drying. $29.99" [ref=e155] [cursor=pointer]:
+              - /url: /personalized-face-cleanser
+              - img "Selected item image" [ref=e157]
+              - generic [ref=e158]:
+                - heading "Personalized Cleanser" [level=3] [ref=e159]
+                - paragraph [ref=e160]: A creamy, gentle formula to cleanse and refresh skin without over-drying.
+                - generic [ref=e161]: $29.99
+            - link "Selected item image Personalized Day Moisturizer with SPF Light, hydrating formula that protects skin from UV damage. $44.99" [ref=e163] [cursor=pointer]:
+              - /url: /personalized-day-moisturizer
+              - img "Selected item image" [ref=e165]
+              - generic [ref=e166]:
+                - heading "Personalized Day Moisturizer with SPF" [level=3] [ref=e167]
+                - paragraph [ref=e168]: Light, hydrating formula that protects skin from UV damage.
+                - generic [ref=e169]: $44.99
+            - link "Selected item image Personalized Night Cream With powerhouse ingredients that target your skin concerns to renew skin overnight. $84.99" [ref=e171] [cursor=pointer]:
+              - /url: /personalized-night-eye-cream
+              - img "Selected item image" [ref=e173]
+              - generic [ref=e174]:
+                - heading "Personalized Night Cream" [level=3] [ref=e175]
+                - paragraph [ref=e176]: With powerhouse ingredients that target your skin concerns to renew skin overnight.
+                - generic [ref=e177]: $84.99
+            - link "Selected item image Personalized Serum Targets your most pressing skin concerns, taking your routine—and results—to the next level. $99.99" [ref=e179] [cursor=pointer]:
+              - /url: /personalized-serum
+              - img "Selected item image" [ref=e181]
+              - generic [ref=e182]:
+                - heading "Personalized Serum" [level=3] [ref=e183]
+                - paragraph [ref=e184]: Targets your most pressing skin concerns, taking your routine—and results—to the next level.
+                - generic [ref=e185]: $99.99
+            - link "Selected item image Personalized Eye Cream Duo Two creams formulated to work together for for maximum nourishment and protection. $129.99" [ref=e187] [cursor=pointer]:
+              - /url: /personalized-eye-cream-duo
+              - img "Selected item image" [ref=e189]
+              - generic [ref=e190]:
+                - heading "Personalized Eye Cream Duo" [level=3] [ref=e191]
+                - paragraph [ref=e192]: Two creams formulated to work together for for maximum nourishment and protection.
+                - generic [ref=e193]: $129.99
+            - link "Selected item image Personalized Day Eye Cream Protects from elemental exposure and hydrates the delicate eye area. $79.99" [ref=e195] [cursor=pointer]:
+              - /url: /personalized-day-eye-cream
+              - img "Selected item image" [ref=e197]
+              - generic [ref=e198]:
+                - heading "Personalized Day Eye Cream" [level=3] [ref=e199]
+                - paragraph [ref=e200]: Protects from elemental exposure and hydrates the delicate eye area.
+                - generic [ref=e201]: $79.99
+            - link "Selected item image Personalized Night Eye Cream A rich treatment with tailored benefits to rejuvenate the eye area as you sleep. $79.99" [ref=e203] [cursor=pointer]:
+              - /url: /personalized-night-eye-cream
+              - img "Selected item image" [ref=e205]
+              - generic [ref=e206]:
+                - heading "Personalized Night Eye Cream" [level=3] [ref=e207]
+                - paragraph [ref=e208]: A rich treatment with tailored benefits to rejuvenate the eye area as you sleep.
+                - generic [ref=e209]: $79.99
+          - button "Shop All" [ref=e211] [cursor=pointer]
+        - generic [ref=e213]:
+          - heading "How it works" [level=2] [ref=e214]
+          - heading "Easy Rituals, Powerful Payoff" [level=2] [ref=e215]
+          - generic [ref=e219]:
+            - generic [ref=e221]:
+              - img "Selected item image" [ref=e223]
+              - generic [ref=e224]:
+                - heading "1. Take the Intelligent Skin Quiz" [level=3] [ref=e225]
+                - paragraph [ref=e226]: Answer simple, targeted questions about your skin, lifestyle, and environment.
+            - generic [ref=e228]:
+              - img "Selected item image" [ref=e230]
+              - generic [ref=e231]:
+                - heading "2. Receive Your Personalized Formula" [level=3] [ref=e232]
+                - paragraph [ref=e233]: Get a tailored skincare regimen created specifically for your skin profile.
+            - generic [ref=e235]:
+              - img "Selected item image" [ref=e237]
+              - generic [ref=e238]:
+                - heading "3. Track & Adapt Your Progress" [level=3] [ref=e239]
+                - paragraph [ref=e240]: Regularly monitor your progress and easily adjust formulas as your skin evolves.
+            - generic [ref=e242]:
+              - img "Selected item image" [ref=e244]
+              - generic [ref=e245]:
+                - heading "4. Enjoy Visible Results in Just 30 Days" [level=3] [ref=e246]
+                - paragraph [ref=e247]: Witness the transformative power of personalized precision.
+                - link "See the Proof" [ref=e248] [cursor=pointer]:
+                  - /url: /#basection
+          - button "TAKE THE QUIZ" [ref=e250] [cursor=pointer]
+          - generic [ref=e253]:
+            - heading "Happiness Guarantee:" [level=5] [ref=e254]
+            - paragraph [ref=e255]: If your skincare isn’t exactly right, we’ll reformulate it until it is—on us. Because your skin evolves, and so should your skincare.
+  - contentinfo [ref=e256]:
+    - generic [ref=e257]:
+      - generic [ref=e260]:
+        - link "instagram" [ref=e261] [cursor=pointer]:
+          - /url: https://www.instagram.com/provenskincare/
+          - img [ref=e262]
+        - link "facebook" [ref=e267] [cursor=pointer]:
+          - /url: https://www.facebook.com/provenskincare/
+          - img [ref=e268]
+        - link "youtube" [ref=e271] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UCB6y1t_mob1GPt7rzUaXNvQ/
+          - img [ref=e272]
+        - link "tiktok" [ref=e276] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@provenskincare/
+          - img [ref=e277]
+      - generic [ref=e281]:
+        - button "ABOUT":
+          - heading "ABOUT" [level=3]:
+            - generic: ABOUT
+        - navigation [ref=e284]:
+          - link "Our Story" [ref=e285] [cursor=pointer]:
+            - /url: /why-proven
+          - link "Our Science" [ref=e286] [cursor=pointer]:
+            - /url: /clinical-proof
+          - link "Reviews" [ref=e287] [cursor=pointer]:
+            - /url: /reviews/
+          - link "As seen on" [ref=e288] [cursor=pointer]:
+            - /url: /press/
+          - link "Proven Promos" [ref=e289] [cursor=pointer]:
+            - /url: /promo-code/
+      - generic [ref=e290]:
+        - button "PRODUCTS":
+          - heading "PRODUCTS" [level=3]:
+            - generic: PRODUCTS
+        - navigation [ref=e293]:
+          - link "Personalized System" [ref=e294] [cursor=pointer]:
+            - /url: /personalized-subscription
+          - link "Cleanser" [ref=e295] [cursor=pointer]:
+            - /url: /personalized-face-cleanser
+          - link "Day Moisturizer" [ref=e296] [cursor=pointer]:
+            - /url: /personalized-day-moisturizer
+          - link "Night Cream" [ref=e297] [cursor=pointer]:
+            - /url: /personalized-night-cream
+          - link "Eye Cream Duo" [ref=e298] [cursor=pointer]:
+            - /url: /personalized-eye-cream-duo
+          - link "Day Eye Cream" [ref=e299] [cursor=pointer]:
+            - /url: /personalized-day-eye-cream
+          - link "Night Eye Cream" [ref=e300] [cursor=pointer]:
+            - /url: /personalized-night-eye-cream
+          - link "All-In-One Serum" [ref=e301] [cursor=pointer]:
+            - /url: /personalized-serum
+      - generic [ref=e302]:
+        - button "LEARN":
+          - heading "LEARN" [level=3]:
+            - generic: LEARN
+        - navigation [ref=e305]:
+          - link "Skin Types" [ref=e306] [cursor=pointer]:
+            - /url: /skin-type
+          - link "Skin Concerns" [ref=e307] [cursor=pointer]:
+            - /url: /skin-concern
+          - link "Ingredients" [ref=e308] [cursor=pointer]:
+            - /url: /skincare-ingredients
+          - link "Blog" [ref=e309] [cursor=pointer]:
+            - /url: /blog
+      - generic [ref=e310]:
+        - button "CONNECT":
+          - heading "CONNECT" [level=3]:
+            - generic: CONNECT
+        - navigation [ref=e313]:
+          - link "Contact Us" [ref=e314] [cursor=pointer]:
+            - /url: /contact-us
+          - link "Influencer Program" [ref=e315] [cursor=pointer]:
+            - /url: /influencer-program
+          - link "FAQs" [ref=e316] [cursor=pointer]:
+            - /url: /faqs
+          - link "Support Center" [ref=e317] [cursor=pointer]:
+            - /url: https://support.provenskincare.com/
+    - generic [ref=e319]:
+      - generic [ref=e320]:
+        - generic [ref=e321]:
+          - link "TERMS & CONDITIONS" [ref=e322] [cursor=pointer]:
+            - /url: /terms-and-conditions
+          - link "PRIVACY POLICY" [ref=e323] [cursor=pointer]:
+            - /url: /policies/privacy-policy
+        - generic [ref=e324]:
+          - text: © 2025, PROVEN Skincare Powered by
+          - link "www.provenskincare.com" [ref=e325] [cursor=pointer]:
+            - /url: https://www.provenskincare.com
+      - generic [ref=e326]: "*According to an independent, 3rd party clinical study conducted over a period of 28 days (The study took place from November 11th to December 9th, 2019) on a test panel of 33 female and male subjects of various ages and ethnicities. (Statistical Significance: * = p < 0.05) N.B.: Increases in Firmness (Ur/Ue) is associated with improved skin elasticity. Reductions in Fatigability (R9), Extensibility (Ue) and Max Amplitude (Uf) are associated with improved skin elasticity."
+```

@@ -15,7 +15,7 @@ export default function ServiciosPage() {
       {/* Header */}
       <div className="mb-10 space-y-4">
         <h1 className="text-4xl font-bold tracking-tight">Nuestros Servicios</h1>
-        <p className="text-muted-foreground max-w-3xl text-lg">
+        <p className="text-muted-foreground text-lg">
           Descubre cómo nuestros servicios de automatización pueden transformar tu negocio,
           optimizar procesos y aumentar la productividad de tu equipo.
         </p>

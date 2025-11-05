@@ -25,12 +25,9 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import { contactFormSchema, ContactFormValues } from '@/lib/schemas/contact-schema'
-import { getAllProducts } from '@/lib/data/products'
 
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
-
-  const products = getAllProducts()
 
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
@@ -83,7 +80,7 @@ export function ContactForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Nombre completo</FormLabel>
+              <FormLabel>Nombre</FormLabel>
               <FormControl>
                 <Input placeholder="Juan Pérez" {...field} />
               </FormControl>
@@ -113,43 +110,48 @@ export function ContactForm() {
           name="phone"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Teléfono (opcional)</FormLabel>
+              <FormLabel>Teléfono</FormLabel>
               <FormControl>
-                <Input type="tel" placeholder="+54 9 11 1234-5678" {...field} />
+                <Input type="tel" placeholder="+54 9 11 1234 5678" {...field} />
               </FormControl>
-              <FormDescription>Incluye código de área para que podamos contactarte</FormDescription>
+              <FormDescription>
+                (Incluí el código de área para poder contactarte correctamente)
+              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
         />
 
         {/* Product Selection */}
-        {products.length > 0 && (
-          <FormField
-            control={form.control}
-            name="productId"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Servicio de interés (opcional)</FormLabel>
-                <Select onValueChange={field.onChange} defaultValue={field.value}>
-                  <FormControl>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Selecciona un servicio" />
-                    </SelectTrigger>
-                  </FormControl>
-                  <SelectContent>
-                    {products.map((product) => (
-                      <SelectItem key={product.id} value={product.id}>
-                        {product.name}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        )}
+        <FormField
+          control={form.control}
+          name="productId"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Seleccioná un servicio</FormLabel>
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Seleccioná un servicio" />
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent>
+                  <SelectItem value="automatizacion-empresarial-inteligente">
+                    Automatización Empresarial
+                  </SelectItem>
+                  <SelectItem value="optimizacion-de-procesos">Optimización de Procesos</SelectItem>
+                  <SelectItem value="soluciones-con-ia-aplicada">Soluciones con IA</SelectItem>
+                  <SelectItem value="otro">Otro</SelectItem>
+                </SelectContent>
+              </Select>
+              <FormDescription>
+                (Desplegable con opciones: Automatización Empresarial / Optimización de Procesos /
+                Soluciones con IA / Otro)
+              </FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
 
         {/* Message Field */}
         <FormField
@@ -157,15 +159,15 @@ export function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Mensaje</FormLabel>
+              <FormLabel>Cuéntanos cómo podemos ayudarte…</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Cuéntanos cómo podemos ayudarte..."
+                  placeholder="✍️ Hasta 1000 caracteres"
                   className="min-h-[120px] resize-none"
                   {...field}
                 />
               </FormControl>
-              <FormDescription>{field.value.length}/1000 caracteres</FormDescription>
+              <FormDescription>✍️ Hasta 1000 caracteres</FormDescription>
               <FormMessage />
             </FormItem>
           )}

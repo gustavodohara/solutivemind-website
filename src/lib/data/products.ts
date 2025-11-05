@@ -3,15 +3,13 @@ import { Product } from '@/lib/types'
 export const PRODUCTS: Product[] = [
   {
     id: '1',
-    name: 'Servicios de Automatización Empresarial',
-    slug: 'servicios-automatizacion-empresarial',
-    description: `Transformamos tu negocio con soluciones de automatización inteligente diseñadas para optimizar procesos, reducir costos y aumentar la productividad.
+    name: '🤖 Automatización Empresarial Inteligente',
+    slug: 'automatizacion-empresarial-inteligente',
+    description: `Transformá tus procesos con flujos de trabajo automatizados que ahorran tiempo, reducen errores y aumentan la eficiencia.
 
-Nuestros servicios incluyen análisis detallado de tus procesos actuales, diseño de flujos de trabajo automatizados, implementación de soluciones tecnológicas de vanguardia, y soporte continuo para garantizar el éxito de tu transformación digital.
-
-Trabajamos con las últimas tecnologías en automatización, inteligencia artificial, y análisis de datos para crear soluciones personalizadas que se adaptan perfectamente a las necesidades específicas de tu empresa.`,
+💡 Ideal para empresas que quieren escalar sin aumentar costos operativos.`,
     shortDescription:
-      'Optimiza tu negocio con automatización inteligente. Reducí costos, aumentá productividad y transformá tus procesos empresariales.',
+      'Transformá tus procesos con flujos de trabajo automatizados que ahorran tiempo, reducen errores y aumentan la eficiencia.',
     price: 0, // Precio a consultar
     currency: 'ARS',
     images: [
@@ -21,14 +19,63 @@ Trabajamos con las últimas tecnologías en automatización, inteligencia artifi
     ],
     category: 'Automatización',
     features: [
-      'Análisis y diagnóstico de procesos actuales',
-      'Diseño de flujos de trabajo optimizados',
-      'Implementación de soluciones a medida',
-      'Integración con sistemas existentes',
-      'Capacitación del equipo',
-      'Soporte y mantenimiento continuo',
-      'Reportes y análisis de resultados',
-      'Escalabilidad garantizada',
+      'Integración entre herramientas (CRM, ERP, sistemas internos)',
+      'Automatización de tareas repetitivas',
+      'Flujos inteligentes con IA para atención, ventas o soporte',
+      'Monitoreo y reportes automáticos',
+    ],
+    inStock: true,
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+  },
+  {
+    id: '2',
+    name: '📈 Optimización de Procesos',
+    slug: 'optimizacion-de-procesos',
+    description: `Analizamos tus operaciones actuales para identificar cuellos de botella y rediseñar flujos más ágiles y rentables.
+
+💡 Ideal para pymes que buscan orden, claridad y control.`,
+    shortDescription:
+      'Analizamos tus operaciones actuales para identificar cuellos de botella y rediseñar flujos más ágiles y rentables.',
+    price: 0, // Precio a consultar
+    currency: 'ARS',
+    images: [
+      '/images/products/placeholder.svg',
+      '/images/products/placeholder.svg',
+      '/images/products/placeholder.svg',
+    ],
+    category: 'Optimización',
+    features: [
+      'Auditoría de procesos y diagnóstico',
+      'Diseño de mejoras basadas en datos',
+      'Implementación de herramientas de eficiencia',
+      'Capacitación al equipo',
+    ],
+    inStock: true,
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+  },
+  {
+    id: '3',
+    name: '🧠 Soluciones con IA Aplicada',
+    slug: 'soluciones-con-ia-aplicada',
+    description: `Llevá tu negocio al siguiente nivel con inteligencia artificial práctica y accesible.
+
+💡 Ideal para empresas que buscan innovar sin depender de grandes equipos técnicos.`,
+    shortDescription:
+      'Llevá tu negocio al siguiente nivel con inteligencia artificial práctica y accesible.',
+    price: 0, // Precio a consultar
+    currency: 'ARS',
+    images: [
+      '/images/products/placeholder.svg',
+      '/images/products/placeholder.svg',
+      '/images/products/placeholder.svg',
+    ],
+    category: 'Inteligencia Artificial',
+    features: [
+      'Chatbots inteligentes y asistentes virtuales',
+      'Análisis predictivo de ventas y clientes',
+      'Modelos personalizados de IA para decisiones estratégicas',
     ],
     inStock: true,
     createdAt: new Date().toISOString(),

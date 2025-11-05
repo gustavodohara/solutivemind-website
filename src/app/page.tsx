@@ -22,36 +22,36 @@ export const metadata: Metadata = {
 const features = [
   {
     icon: Zap,
-    title: 'Automatización Inteligente',
+    title: '⚙️ Automatización Inteligente',
     description:
-      'Implementamos soluciones que automatizan tareas repetitivas, liberando tiempo para actividades estratégicas.',
+      'Eliminamos tareas repetitivas para que tu equipo pueda enfocarse en la estrategia y el crecimiento.',
   },
   {
     icon: TrendingUp,
-    title: 'Optimización de Procesos',
+    title: '🔍 Optimización de Procesos',
     description:
-      'Analizamos y mejoramos tus procesos actuales para maximizar eficiencia y resultados.',
+      'Analizamos, simplificamos y potenciamos tus flujos de trabajo para lograr resultados medibles.',
   },
   {
     icon: Shield,
-    title: 'Soluciones Confiables',
+    title: '🔒 Soluciones Confiables',
     description:
-      'Tecnología robusta y probada que garantiza continuidad y seguridad en tus operaciones.',
+      'Tecnología robusta y segura, con resultados probados y soporte experto en cada paso.',
   },
   {
     icon: Clock,
-    title: 'Ahorro de Tiempo',
-    description: 'Reduce drásticamente el tiempo dedicado a tareas manuales y repetitivas.',
+    title: '⏱️ Ahorro de Tiempo',
+    description: 'Automatizá hasta el 80 % de tus tareas rutinarias y liberá recursos para innovar.',
   },
   {
     icon: Users,
-    title: 'Soporte Continuo',
-    description: 'Acompañamiento permanente para asegurar el éxito de tu transformación digital.',
+    title: '🤝 Soporte Continuo',
+    description: 'Te acompañamos antes, durante y después de la implementación.',
   },
   {
     icon: Sparkles,
-    title: 'Innovación Constante',
-    description: 'Utilizamos las últimas tecnologías para mantener tu negocio a la vanguardia.',
+    title: '🚀 Innovación Constante',
+    description: 'Actualizamos nuestras soluciones con las últimas tecnologías en IA y automatización.',
   },
 ]
 
@@ -62,11 +62,27 @@ export default function HomePage() {
       <Hero
         title={
           <>
-            Transforma tu negocio con{' '}
+            🧠 Transforma tu negocio con{' '}
             <span className="text-primary">automatización inteligente</span>
           </>
         }
-        description="Optimiza procesos, reduce costos y aumenta la productividad de tu empresa con nuestras soluciones de automatización a medida."
+        description={
+          <>
+            Impulsá tu empresa con soluciones basadas en IA que optimizan procesos, reducen costos y
+            aumentan la productividad.
+            <br />
+            <br />
+            🔹 Menos tareas manuales.
+            <br />
+            🔹 Más enfoque en lo que realmente importa.
+            <br />
+            <br />
+            👉 Descubrí cómo →{' '}
+            <Link href="/servicios" className="text-primary underline hover:text-primary/80">
+              Ver Servicios
+            </Link>
+          </>
+        }
         actions={
           <>
             <Button size="lg" asChild>
@@ -81,8 +97,8 @@ export default function HomePage() {
 
       {/* Features Section */}
       <FeaturesSection
-        title="¿Por qué elegirnos?"
-        description="Soluciones completas de automatización diseñadas para impulsar tu negocio"
+        title="💼 ¿Por qué elegir SolutiveMind?"
+        description="Soluciones completas de automatización diseñadas para llevar tu negocio al siguiente nivel."
         features={features}
       />
 
@@ -93,11 +109,13 @@ export default function HomePage() {
             <CardHeader className="text-center">
               <Badge className="mx-auto mb-4 w-fit">Comenzá Hoy</Badge>
               <CardTitle className="text-3xl sm:text-4xl">
-                ¿Listo para optimizar tu negocio?
+                🚀 Empezá hoy tu transformación digital
               </CardTitle>
               <CardDescription className="mt-4 text-lg">
-                Contáctanos para una consulta gratuita y descubre cómo la automatización puede
-                transformar tu empresa.
+                Cada proceso optimizado es un paso hacia un negocio más rentable.
+                <br />
+                💬 Agenda una consulta gratuita y descubrí cómo la automatización puede cambiar tu
+                forma de trabajar.
               </CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col justify-center gap-4 sm:flex-row">

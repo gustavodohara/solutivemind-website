@@ -4,7 +4,8 @@ import { ProductGrid } from '@/components/products/product-grid'
 
 export const metadata: Metadata = {
   title: 'Servicios - SolutiveMind',
-  description: 'Descubre nuestros servicios de automatización empresarial',
+  description:
+    'Descubrí cómo la automatización inteligente puede transformar tu negocio, optimizar procesos y liberar el potencial de tu equipo.',
 }
 
 export default function ServiciosPage() {
@@ -14,10 +15,13 @@ export default function ServiciosPage() {
     <div className="w-full px-4 py-10 sm:px-6 lg:px-8">
       {/* Header */}
       <div className="mb-10 space-y-4">
-        <h1 className="text-4xl font-bold tracking-tight">Nuestros Servicios</h1>
+        <h1 className="text-4xl font-bold tracking-tight">⚙️ Nuestros Servicios</h1>
         <p className="text-muted-foreground text-lg">
-          Descubre cómo nuestros servicios de automatización pueden transformar tu negocio,
-          optimizar procesos y aumentar la productividad de tu equipo.
+          Descubrí cómo la automatización inteligente puede transformar tu negocio, optimizar
+          procesos y liberar el potencial de tu equipo.
+          <br />
+          En SolutiveMind, diseñamos soluciones a medida que combinan tecnología, estrategia e
+          inteligencia artificial.
         </p>
       </div>
 

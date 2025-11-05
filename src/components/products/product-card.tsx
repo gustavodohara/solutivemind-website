@@ -22,7 +22,7 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <Card className="overflow-hidden transition-all hover:shadow-lg">
       {/* Image */}
-      <div className="relative aspect-video w-full overflow-hidden bg-muted">
+      <div className="bg-muted relative aspect-video w-full overflow-hidden">
         <Image
           src={product.images[0]}
           alt={product.name}
@@ -34,12 +34,10 @@ export function ProductCard({ product }: ProductCardProps) {
 
       <CardHeader>
         {/* Category Badge */}
-        <Badge className="w-fit mb-2">{product.category}</Badge>
+        <Badge className="mb-2 w-fit">{product.category}</Badge>
 
         <CardTitle className="line-clamp-2">{product.name}</CardTitle>
-        <CardDescription className="line-clamp-3">
-          {product.shortDescription}
-        </CardDescription>
+        <CardDescription className="line-clamp-3">{product.shortDescription}</CardDescription>
       </CardHeader>
 
       <CardContent>

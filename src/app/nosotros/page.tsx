@@ -22,23 +22,23 @@ export default function NosotrosPage() {
       />
 
       {/* Main Content */}
-      <section className="py-16 border-t">
-        <div className="container px-4 sm:px-6 lg:px-8">
+      <section className="border-t py-16">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl space-y-12">
             {/* Who We Are */}
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tight">¿Quiénes somos?</h2>
               <div className="prose prose-slate dark:prose-invert max-w-none">
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground text-lg leading-relaxed">
                   SolutiveMind es una empresa especializada en servicios de automatización
-                  empresarial. Ayudamos a organizaciones a optimizar sus procesos,
-                  reducir costos operativos y aumentar la productividad mediante la
-                  implementación de soluciones tecnológicas innovadoras.
+                  empresarial. Ayudamos a organizaciones a optimizar sus procesos, reducir costos
+                  operativos y aumentar la productividad mediante la implementación de soluciones
+                  tecnológicas innovadoras.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Nuestro enfoque se centra en entender las necesidades específicas de cada
-                  cliente para diseñar e implementar soluciones a medida que generen
-                  resultados tangibles y sostenibles en el tiempo.
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  Nuestro enfoque se centra en entender las necesidades específicas de cada cliente
+                  para diseñar e implementar soluciones a medida que generen resultados tangibles y
+                  sostenibles en el tiempo.
                 </p>
               </div>
             </div>
@@ -47,45 +47,44 @@ export default function NosotrosPage() {
             <div className="grid gap-6 sm:grid-cols-3">
               <Card>
                 <CardHeader>
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                    <Target className="h-6 w-6 text-primary" />
+                  <div className="bg-primary/10 mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
+                    <Target className="text-primary h-6 w-6" />
                   </div>
                   <CardTitle>Misión</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Transformar empresas mediante automatización inteligente que genere
-                    valor real y sostenible.
+                    Transformar empresas mediante automatización inteligente que genere valor real y
+                    sostenible.
                   </p>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader>
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                    <Eye className="h-6 w-6 text-primary" />
+                  <div className="bg-primary/10 mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
+                    <Eye className="text-primary h-6 w-6" />
                   </div>
                   <CardTitle>Visión</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Ser líderes en soluciones de automatización que impulsen la
-                    transformación digital empresarial.
+                    Ser líderes en soluciones de automatización que impulsen la transformación
+                    digital empresarial.
                   </p>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader>
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                    <Award className="h-6 w-6 text-primary" />
+                  <div className="bg-primary/10 mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
+                    <Award className="text-primary h-6 w-6" />
                   </div>
                   <CardTitle>Valores</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Innovación, excelencia, compromiso con el cliente y resultados
-                    medibles.
+                    Innovación, excelencia, compromiso con el cliente y resultados medibles.
                   </p>
                 </CardContent>
               </Card>
@@ -95,10 +94,10 @@ export default function NosotrosPage() {
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tight">¿Qué hacemos?</h2>
               <div className="prose prose-slate dark:prose-invert max-w-none">
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground text-lg leading-relaxed">
                   Ofrecemos servicios completos de automatización empresarial que incluyen:
                 </p>
-                <ul className="text-lg text-muted-foreground space-y-2">
+                <ul className="text-muted-foreground space-y-2 text-lg">
                   <li>Análisis y diagnóstico de procesos actuales</li>
                   <li>Diseño de soluciones de automatización personalizadas</li>
                   <li>Implementación de tecnologías de vanguardia</li>
@@ -110,12 +109,12 @@ export default function NosotrosPage() {
             </div>
 
             {/* CTA */}
-            <div className="rounded-lg border-2 bg-muted/50 p-8 text-center space-y-4">
+            <div className="bg-muted/50 space-y-4 rounded-lg border-2 p-8 text-center">
               <h3 className="text-2xl font-bold">¿Listo para comenzar?</h3>
               <p className="text-muted-foreground">
                 Descubre cómo podemos ayudarte a transformar tu negocio
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col justify-center gap-4 sm:flex-row">
                 <Button size="lg" asChild>
                   <Link href="/servicios">Ver Servicios</Link>
                 </Button>

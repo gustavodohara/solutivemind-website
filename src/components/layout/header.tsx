@@ -15,7 +15,7 @@ export function Header() {
   const { isActive } = useActivePath()
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
@@ -23,16 +23,14 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="hidden items-center space-x-6 md:flex">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               className={cn(
-                'text-sm font-medium transition-colors hover:text-primary',
-                isActive(item.href)
-                  ? 'text-primary'
-                  : 'text-muted-foreground'
+                'hover:text-primary text-sm font-medium transition-colors',
+                isActive(item.href) ? 'text-primary' : 'text-muted-foreground'
               )}
             >
               {item.label}

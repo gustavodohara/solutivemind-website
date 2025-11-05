@@ -12,24 +12,20 @@ export function Hero({ title, description, actions, className }: HeroProps) {
   return (
     <section
       className={cn(
-        'relative overflow-hidden bg-gradient-to-b from-muted/50 to-background py-20 md:py-28',
+        'from-muted/50 to-background relative overflow-hidden bg-gradient-to-b py-20 md:py-28',
         className
       )}
     >
-      <div className="container px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center space-y-6">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl space-y-6 text-center">
           {typeof title === 'string' ? (
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              {title}
-            </h1>
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">{title}</h1>
           ) : (
             title
           )}
 
           {typeof description === 'string' ? (
-            <p className="text-lg text-muted-foreground sm:text-xl">
-              {description}
-            </p>
+            <p className="text-muted-foreground text-lg sm:text-xl">{description}</p>
           ) : (
             description
           )}

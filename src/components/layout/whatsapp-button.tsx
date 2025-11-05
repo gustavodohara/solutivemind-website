@@ -29,7 +29,7 @@ export function WhatsAppButton() {
     <Button
       onClick={handleClick}
       size="lg"
-      className="fixed bottom-6 right-6 z-50 rounded-full shadow-lg hover:scale-110 transition-transform bg-[#25D366] hover:bg-[#20BA5A] text-white"
+      className="fixed right-6 bottom-6 z-50 rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110 hover:bg-[#20BA5A]"
       style={{ height: 'calc(var(--spacing) * 10)', width: 'calc(var(--spacing) * 10)' }}
       aria-label="Contactar por WhatsApp"
     >

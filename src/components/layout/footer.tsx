@@ -6,13 +6,13 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="border-t bg-muted/50">
-      <div className="container mx-auto py-12 px-4 md:px-6">
+    <footer className="bg-muted/50 border-t">
+      <div className="container mx-auto px-4 py-12 md:px-6">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">SolutiveMind</h3>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-muted-foreground text-sm">
               Servicios automatizados para impulsar tu negocio con tecnología de vanguardia.
             </p>
           </div>
@@ -25,7 +25,7 @@ export function Footer() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                  className="text-muted-foreground hover:text-primary text-sm transition-colors"
                 >
                   {item.label}
                 </Link>
@@ -36,7 +36,7 @@ export function Footer() {
           {/* Contact Info */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Contacto</h3>
-            <div className="flex flex-col space-y-2 text-sm text-muted-foreground">
+            <div className="text-muted-foreground flex flex-col space-y-2 text-sm">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
                 <a
@@ -64,10 +64,8 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>
-            © {currentYear} SolutiveMind. Todos los derechos reservados.
-          </p>
+        <div className="text-muted-foreground mt-8 border-t pt-8 text-center text-sm">
+          <p>© {currentYear} SolutiveMind. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

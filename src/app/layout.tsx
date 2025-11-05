@@ -40,14 +40,12 @@ export const metadata: Metadata = {
     url: 'https://solutivemind.com',
     siteName: 'SolutiveMind',
     title: 'SolutiveMind - Servicios de Automatización Empresarial',
-    description:
-      'Transformamos tu negocio con soluciones de automatización inteligente.',
+    description: 'Transformamos tu negocio con soluciones de automatización inteligente.',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'SolutiveMind - Servicios de Automatización Empresarial',
-    description:
-      'Transformamos tu negocio con soluciones de automatización inteligente.',
+    description: 'Transformamos tu negocio con soluciones de automatización inteligente.',
   },
   robots: {
     index: true,

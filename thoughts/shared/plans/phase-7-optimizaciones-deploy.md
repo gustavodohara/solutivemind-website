@@ -115,8 +115,8 @@ export default nextConfig
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Config compila sin errores
-- [ ] `npm run build` exitoso
+- [x] Config compila sin errores
+- [x] `npm run build` exitoso
 
 ---
 
@@ -146,7 +146,7 @@ Agregar scripts útiles:
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Todos los scripts ejecutan correctamente
+- [x] Todos los scripts ejecutan correctamente
 
 ---
 
@@ -188,8 +188,8 @@ Asegurar que está:
 ### Success Criteria:
 
 #### Manual Verification:
-- [ ] `.env.example` committed al repo
-- [ ] `.env.local` en .gitignore
+- [x] `.env.example` committed al repo
+- [x] `.env.local` en .gitignore
 
 ---
 
@@ -304,9 +304,9 @@ npm run type-check
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] `npm run lint` sin errores ni warnings
-- [ ] `npm run type-check` sin errores
-- [ ] `npm run build` sin warnings
+- [x] `npm run lint` sin errores ni warnings
+- [x] `npm run type-check` sin errores
+- [x] `npm run build` sin warnings
 
 ---
 
@@ -560,7 +560,7 @@ Para issues con deployment, contactar a [tu-email@ejemplo.com]
 ### Success Criteria:
 
 #### Manual Verification:
-- [ ] Documentación clara y completa
+- [x] Documentación clara y completa
 
 ---
 
@@ -569,10 +569,10 @@ Para issues con deployment, contactar a [tu-email@ejemplo.com]
 ### Checklist completo:
 
 #### Build & Code Quality
-- [ ] `npm run build` exitoso sin warnings
-- [ ] `npm run lint` sin errores
-- [ ] `npm run type-check` sin errores
-- [ ] No console.logs en producción
+- [x] `npm run build` exitoso sin warnings
+- [x] `npm run lint` sin errores
+- [x] `npm run type-check` sin errores
+- [x] No console.logs en producción
 
 #### Funcionalidad
 - [ ] Todas las páginas accesibles
@@ -686,9 +686,9 @@ Targets para mantener:
 ## Success Criteria Summary
 
 ### Automated Verification:
-- [ ] `npm run build` exitoso sin warnings
-- [ ] `npm run lint` sin errores
-- [ ] `npm run type-check` sin errores
+- [x] `npm run build` exitoso sin warnings
+- [x] `npm run lint` sin errores
+- [x] `npm run type-check` sin errores
 - [ ] Deploy automático funciona en Vercel
 
 ### Manual Verification:

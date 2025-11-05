@@ -19,10 +19,7 @@ export async function POST(request: NextRequest) {
     // TODO: Save to database if needed
 
     // Return success
-    return NextResponse.json(
-      { message: 'Mensaje enviado exitosamente' },
-      { status: 200 }
-    )
+    return NextResponse.json({ message: 'Mensaje enviado exitosamente' }, { status: 200 })
   } catch (error) {
     console.error('Contact form error:', error)
 
@@ -33,9 +30,6 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    return NextResponse.json(
-      { error: 'Error interno del servidor' },
-      { status: 500 }
-    )
+    return NextResponse.json({ error: 'Error interno del servidor' }, { status: 500 })
   }
 }

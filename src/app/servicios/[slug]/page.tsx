@@ -21,9 +21,7 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata for SEO
-export async function generateMetadata({
-  params,
-}: ProductPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
   const product = getProductBySlug(params.slug)
 
   if (!product) {
@@ -51,7 +49,7 @@ export default function ProductPage({ params }: ProductPageProps) {
   }
 
   return (
-    <div className="container py-10">
+    <div className="w-full px-4 py-10 sm:px-6 lg:px-8">
       {/* Back button */}
       <Button variant="ghost" className="mb-6" asChild>
         <Link href="/servicios">

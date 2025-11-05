@@ -16,13 +16,13 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
         <SheetHeader>
           <SheetTitle>Menú</SheetTitle>
         </SheetHeader>
-        <nav className="flex flex-col space-y-4 mt-6">
+        <nav className="mt-6 flex flex-col space-y-4">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               onClick={() => onOpenChange(false)}
-              className="text-lg font-medium transition-colors hover:text-primary"
+              className="hover:text-primary text-lg font-medium transition-colors"
             >
               {item.label}
             </Link>

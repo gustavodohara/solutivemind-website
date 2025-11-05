@@ -35,7 +35,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
       {/* Images */}
       <div className="space-y-4">
         {/* Main Image */}
-        <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-muted">
+        <div className="bg-muted relative aspect-video w-full overflow-hidden rounded-lg">
           <Image
             src={product.images[selectedImage]}
             alt={`${product.name} - imagen ${selectedImage + 1}`}
@@ -56,7 +56,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
                 className={`relative aspect-video overflow-hidden rounded-md border-2 transition-all ${
                   selectedImage === index
                     ? 'border-primary'
-                    : 'border-transparent hover:border-muted-foreground'
+                    : 'hover:border-muted-foreground border-transparent'
                 }`}
               >
                 <Image
@@ -77,30 +77,24 @@ export function ProductDetail({ product }: ProductDetailProps) {
         {/* Header */}
         <div className="space-y-4">
           <Badge>{product.category}</Badge>
-          <h1 className="text-3xl font-bold tracking-tight lg:text-4xl">
-            {product.name}
-          </h1>
-          <p className="text-2xl font-semibold text-primary">
-            {formatPrice(product.price)}
-          </p>
+          <h1 className="text-3xl font-bold tracking-tight lg:text-4xl">{product.name}</h1>
+          <p className="text-primary text-2xl font-semibold">{formatPrice(product.price)}</p>
         </div>
 
         {/* Description */}
         <div className="prose prose-slate dark:prose-invert">
-          <p className="text-muted-foreground whitespace-pre-line">
-            {product.description}
-          </p>
+          <p className="text-muted-foreground whitespace-pre-line">{product.description}</p>
         </div>
 
         {/* Features */}
         {product.features && product.features.length > 0 && (
           <Card>
             <CardContent className="pt-6">
-              <h3 className="font-semibold mb-4">Características incluidas:</h3>
+              <h3 className="mb-4 font-semibold">Características incluidas:</h3>
               <ul className="space-y-2">
                 {product.features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-2">
-                    <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                    <Check className="text-primary mt-0.5 h-5 w-5 shrink-0" />
                     <span className="text-sm">{feature}</span>
                   </li>
                 ))}
@@ -111,15 +105,11 @@ export function ProductDetail({ product }: ProductDetailProps) {
 
         {/* CTA */}
         <div className="space-y-4">
-          <Button
-            size="lg"
-            className="w-full"
-            onClick={handleContactWhatsApp}
-          >
+          <Button size="lg" className="w-full" onClick={handleContactWhatsApp}>
             <MessageCircle className="mr-2 h-5 w-5" />
             Consultar por WhatsApp
           </Button>
-          <p className="text-center text-sm text-muted-foreground">
+          <p className="text-muted-foreground text-center text-sm">
             Contáctanos para recibir una cotización personalizada
           </p>
         </div>

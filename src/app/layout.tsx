@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/providers/theme-provider'
@@ -18,9 +18,54 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'SolutiveMind - Servicios Automatizados',
-  description: 'Soluciones automatizadas para impulsar tu negocio con tecnología de vanguardia',
-  keywords: ['servicios automatizados', 'tecnología', 'automatización', 'negocios'],
+  metadataBase: new URL('https://solutivemind.com'),
+  title: {
+    default: 'SolutiveMind - Servicios de Automatización Empresarial',
+    template: '%s | SolutiveMind',
+  },
+  description:
+    'Transformamos tu negocio con soluciones de automatización inteligente. Optimiza procesos, reduce costos y aumenta la productividad.',
+  keywords: [
+    'automatización empresarial',
+    'transformación digital',
+    'optimización de procesos',
+    'servicios automatizados',
+    'consultoría tecnológica',
+  ],
+  authors: [{ name: 'SolutiveMind' }],
+  creator: 'SolutiveMind',
+  openGraph: {
+    type: 'website',
+    locale: 'es_AR',
+    url: 'https://solutivemind.com',
+    siteName: 'SolutiveMind',
+    title: 'SolutiveMind - Servicios de Automatización Empresarial',
+    description:
+      'Transformamos tu negocio con soluciones de automatización inteligente.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SolutiveMind - Servicios de Automatización Empresarial',
+    description:
+      'Transformamos tu negocio con soluciones de automatización inteligente.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
 }
 
 export default function RootLayout({

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/providers/theme-provider'
+import { ToastProvider } from '@/components/providers/toast-provider'
 import { Header } from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
 import { WhatsAppButton } from '@/components/layout/whatsapp-button'
@@ -42,6 +43,7 @@ export default function RootLayout({
             <Footer />
           </div>
           <WhatsAppButton />
+          <ToastProvider />
         </ThemeProvider>
       </body>
     </html>

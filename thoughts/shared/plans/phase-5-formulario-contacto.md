@@ -59,7 +59,7 @@ Esto instala el component wrapper que integra React Hook Form con shadcn/ui.
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Component `form` existe en `src/components/ui/`
+- [x] Component `form` existe en `src/components/ui/`
 
 ---
 
@@ -108,8 +108,8 @@ export type ContactFormValues = z.infer<typeof contactFormSchema>
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Schema compila sin errores
-- [ ] Type `ContactFormValues` se puede usar
+- [x] Schema compila sin errores
+- [x] Type `ContactFormValues` se puede usar
 
 ---
 
@@ -343,11 +343,11 @@ export function ContactForm() {
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Componente compila sin errores TypeScript
+- [x] Componente compila sin errores TypeScript
 
 #### Manual Verification:
-- [ ] Form fields se renderizan correctamente
-- [ ] Validación muestra errores en español
+- [x] Form fields se renderizan correctamente
+- [x] Validación muestra errores en español
 
 ---
 
@@ -495,13 +495,13 @@ export default function ContactoPage() {
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] Página compila sin errores
-- [ ] `npm run build` exitoso
+- [x] Página compila sin errores
+- [x] `npm run build` exitoso
 
 #### Manual Verification:
-- [ ] Navegar a `/contacto` muestra la página
-- [ ] Layout 2/3 formulario + 1/3 info en desktop
-- [ ] Responsive: columnas se apilan en mobile
+- [x] Navegar a `/contacto` muestra la página
+- [x] Layout 2/3 formulario + 1/3 info en desktop
+- [x] Responsive: columnas se apilan en mobile
 
 ---
 
@@ -593,12 +593,12 @@ const onSubmit = async (data: ContactFormValues) => {
 ### Success Criteria:
 
 #### Automated Verification:
-- [ ] API route compila sin errores
-- [ ] POST request retorna 200 OK
+- [x] API route compila sin errores
+- [x] POST request retorna 200 OK
 
 #### Manual Verification:
-- [ ] Form submission llama al API endpoint
-- [ ] Datos se validan correctamente en el servidor
+- [x] Form submission llama al API endpoint
+- [x] Datos se validan correctamente en el servidor
 
 ---
 
@@ -687,8 +687,8 @@ const onSubmit = async (data: ContactFormValues) => {
 ### Success Criteria:
 
 #### Manual Verification:
-- [ ] Toast de éxito aparece al enviar formulario
-- [ ] Toast de error aparece si falla el envío
+- [x] Toast de éxito aparece al enviar formulario
+- [x] Toast de error aparece si falla el envío
 
 ---
 
@@ -697,36 +697,36 @@ const onSubmit = async (data: ContactFormValues) => {
 ### Manual Testing Checklist:
 
 #### Validación:
-- [ ] Campo nombre vacío muestra error
-- [ ] Campo nombre <2 chars muestra error
-- [ ] Email inválido muestra error
-- [ ] Email vacío muestra error
-- [ ] Teléfono en formato incorrecto muestra error
-- [ ] Teléfono opcional funciona (puede dejarse vacío)
-- [ ] Mensaje <10 chars muestra error
-- [ ] Mensaje >1000 chars muestra error
-- [ ] Todos los mensajes de error están en español
+- [x] Campo nombre vacío muestra error
+- [x] Campo nombre <2 chars muestra error
+- [x] Email inválido muestra error
+- [x] Email vacío muestra error
+- [x] Teléfono en formato incorrecto muestra error
+- [x] Teléfono opcional funciona (puede dejarse vacío)
+- [x] Mensaje <10 chars muestra error
+- [x] Mensaje >1000 chars muestra error
+- [x] Todos los mensajes de error están en español
 
 #### Funcionalidad:
-- [ ] Submit deshabilitado mientras carga
-- [ ] Loading state muestra spinner
-- [ ] Success message aparece después de envío
-- [ ] Form se resetea después de envío exitoso
-- [ ] Product selector muestra todos los productos
-- [ ] Character counter funciona en mensaje
+- [x] Submit deshabilitado mientras carga
+- [x] Loading state muestra spinner
+- [x] Success message aparece después de envío
+- [x] Form se resetea después de envío exitoso
+- [x] Product selector muestra todos los productos
+- [x] Character counter funciona en mensaje
 
 #### UI/UX:
-- [ ] Labels claros y descriptivos
-- [ ] Placeholders útiles
-- [ ] Focus states visibles
-- [ ] Error messages visibles y claros
-- [ ] Responsive en mobile
+- [x] Labels claros y descriptivos
+- [x] Placeholders útiles
+- [x] Focus states visibles
+- [x] Error messages visibles y claros
+- [x] Responsive en mobile
 
 #### Accessibility:
-- [ ] Todos los campos tienen labels
-- [ ] Errores asociados a campos (aria-describedby)
-- [ ] Form navegable con teclado
-- [ ] Screen readers funcionan correctamente
+- [x] Todos los campos tienen labels
+- [x] Errores asociados a campos (aria-describedby)
+- [x] Form navegable con teclado
+- [x] Screen readers funcionan correctamente
 
 ### Automated Testing:
 ```bash

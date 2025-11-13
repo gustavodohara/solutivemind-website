@@ -161,12 +161,61 @@ export const originalPalette: ThemePalette = {
   },
 }
 
+// ONA Palette - Enterprise-grade navy/onyx design
+export const onaPalette: ThemePalette = {
+  name: 'ONA',
+  description: 'Enterprise-grade navy/onyx palette inspired by ONA.com',
+  light: {
+    background: 'oklch(1 0 0)',                    // White
+    foreground: 'oklch(0.20 0.01 240)',            // Nearly black
+    primary: 'oklch(0.25 0.02 240)',               // Deep navy
+    primaryForeground: 'oklch(1 0 0)',
+    secondary: 'oklch(0.45 0.02 240)',             // Mid navy
+    secondaryForeground: 'oklch(1 0 0)',
+    accent: 'oklch(0.60 0.08 200)',                // Subtle teal
+    accentForeground: 'oklch(1 0 0)',
+    muted: 'oklch(0.96 0.002 240)',
+    mutedForeground: 'oklch(0.45 0.01 240)',
+    card: 'oklch(1 0 0)',
+    cardForeground: 'oklch(0.20 0.01 240)',
+    popover: 'oklch(1 0 0)',
+    popoverForeground: 'oklch(0.20 0.01 240)',
+    border: 'oklch(0.90 0.002 240)',
+    input: 'oklch(0.90 0.002 240)',
+    ring: 'oklch(0.25 0.02 240)',
+    destructive: 'oklch(0.577 0.245 27.325)',
+    destructiveForeground: 'oklch(1 0 0)',
+  },
+  dark: {
+    background: 'oklch(0.12 0.01 240)',            // #0A0E19 approx
+    foreground: 'oklch(0.98 0.002 240)',
+    primary: 'oklch(0.35 0.02 240)',
+    primaryForeground: 'oklch(1 0 0)',
+    secondary: 'oklch(0.25 0.02 240)',
+    secondaryForeground: 'oklch(1 0 0)',
+    accent: 'oklch(0.65 0.08 200)',
+    accentForeground: 'oklch(0.12 0.01 240)',
+    muted: 'oklch(0.18 0.01 240)',
+    mutedForeground: 'oklch(0.65 0.01 240)',
+    card: 'oklch(0.15 0.01 240)',
+    cardForeground: 'oklch(0.98 0.002 240)',
+    popover: 'oklch(0.15 0.01 240)',
+    popoverForeground: 'oklch(0.98 0.002 240)',
+    border: 'oklch(1 0 0 / 10%)',
+    input: 'oklch(1 0 0 / 15%)',
+    ring: 'oklch(0.35 0.02 240)',
+    destructive: 'oklch(0.65 0.245 27.325)',
+    destructiveForeground: 'oklch(0.12 0.01 240)',
+  },
+}
+
 // Export active palette
-export const activePalette = solutiveMindPalette
+export const activePalette = onaPalette
 
 // Export all palettes
 export const allPalettes = {
   solutiveMind: solutiveMindPalette,
   original: originalPalette,
+  ona: onaPalette,
 }
 

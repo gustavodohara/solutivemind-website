@@ -397,10 +397,10 @@ export { Card }
 ### Success Criteria
 
 #### Automated Verification:
-- [ ] Theme generation exitosa: `npm run generate-theme`
-- [ ] Build sin errores: `npm run build`
+- [x] Theme generation exitosa: `npm run generate-theme`
+- [x] Build sin errores: `npm run build`
 - [ ] Type checking pasa: `npm run typecheck` (si existe)
-- [ ] Linting limpio: `npm run lint`
+- [ ] Linting limpio: `npm run lint` (configuración issue, pero build pasa)
 
 #### Playwright Verification:
 ```bash

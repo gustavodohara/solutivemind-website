@@ -1,17 +1,54 @@
 import * as React from 'react'
+import Image from 'next/image'
 
 import { cn } from '@/lib/utils'
 
-function Card({ className, ...props }: React.ComponentProps<'div'>) {
+interface CardProps extends React.ComponentProps<'div'> {
+  variant?: 'default' | 'bordered' | 'elevated' | 'image-bg'
+  backgroundImage?: string
+  overlay?: boolean
+}
+
+function Card({
+  className,
+  variant = 'default',
+  backgroundImage,
+  overlay,
+  children,
+  ...props
+}: CardProps) {
+  const variantClasses = {
+    default: 'border',
+    bordered: 'border-2',
+    elevated: 'border shadow-lg',
+    'image-bg': 'border overflow-hidden',
+  }
+
   return (
     <div
       data-slot="card"
       className={cn(
-        'bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm',
+        'bg-card text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm relative',
+        variantClasses[variant],
         className
       )}
       {...props}
-    />
+    >
+      {backgroundImage && (
+        <>
+          <Image
+            src={backgroundImage}
+            alt=""
+            fill
+            className="object-cover z-0"
+          />
+          {overlay && (
+            <div className="absolute inset-0 bg-background/80 z-0" />
+          )}
+        </>
+      )}
+      <div className={cn('relative', backgroundImage ? 'z-10' : '')}>{children}</div>
+    </div>
   )
 }
 

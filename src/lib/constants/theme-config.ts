@@ -22,20 +22,20 @@
  * - https://www.sessions.edu/color-calculator/ - Palette calculator
  */
 
-export { activePalette, allPalettes } from '@/lib/theme/palettes'
+export { activePalette, allPalettes, onaPalette } from '@/lib/theme/palettes'
 
 // Current active palette values for reference
 // These are automatically loaded from activePalette in palettes.ts
 export const THEME_CONFIG = {
   light: {
-    primary: 'oklch(0.69 0.11 198)', // Cyan
-    secondary: 'oklch(0.32 0.08 245)', // Dark blue
-    accent: 'oklch(0.92 0.22 125)', // Lime green
+    primary: 'oklch(0.25 0.02 240)', // Deep navy
+    secondary: 'oklch(0.45 0.02 240)', // Mid navy
+    accent: 'oklch(0.60 0.08 200)', // Subtle teal
   },
   dark: {
-    primary: 'oklch(0.75 0.11 198)', // Brighter cyan
-    secondary: 'oklch(0.40 0.08 245)', // Lighter dark blue
-    accent: 'oklch(0.90 0.22 125)', // Bright lime
+    primary: 'oklch(0.35 0.02 240)', // Navy
+    secondary: 'oklch(0.25 0.02 240)', // Dark navy
+    accent: 'oklch(0.65 0.08 200)', // Teal
   },
 } as const
 

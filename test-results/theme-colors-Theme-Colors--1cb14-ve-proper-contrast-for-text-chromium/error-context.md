@@ -1,0 +1,121 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "SolutiveMind" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]: SolutiveMind
+        - navigation [ref=e7]:
+          - link "Inicio" [ref=e8] [cursor=pointer]:
+            - /url: /
+          - link "Servicios" [ref=e9] [cursor=pointer]:
+            - /url: /servicios
+          - link "Sobre Nosotros" [ref=e10] [cursor=pointer]:
+            - /url: /nosotros
+          - link "Contacto" [ref=e11] [cursor=pointer]:
+            - /url: /contacto
+        - button "Cambiar tema" [ref=e13]:
+          - img
+    - main [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e18]:
+          - text: 🧠 Transforma tu negocio con automatización inteligenteImpulsá tu empresa con soluciones basadas en IA que optimizan procesos, reducen costos y aumentan la productividad.
+          - text: 🔹 Menos tareas manuales.
+          - text: 🔹 Más enfoque en lo que realmente importa.
+          - text: 👉 Descubrí cómo →
+          - link "Ver Servicios" [ref=e19] [cursor=pointer]:
+            - /url: /servicios
+          - generic [ref=e20]:
+            - link "Ver Servicios" [ref=e21] [cursor=pointer]:
+              - /url: /servicios
+            - link "Contactar" [ref=e22] [cursor=pointer]:
+              - /url: /contacto
+        - generic [ref=e24]:
+          - generic [ref=e25]:
+            - heading "💼 ¿Por qué elegir SolutiveMind?" [level=2] [ref=e26]
+            - paragraph [ref=e27]: Soluciones completas de automatización diseñadas para llevar tu negocio al siguiente nivel.
+          - generic [ref=e28]:
+            - generic [ref=e30]:
+              - generic [ref=e31]:
+                - img [ref=e33]
+                - generic [ref=e35]: ⚙️ Automatización Inteligente
+              - generic [ref=e37]: Eliminamos tareas repetitivas para que tu equipo pueda enfocarse en la estrategia y el crecimiento.
+            - generic [ref=e39]:
+              - generic [ref=e40]:
+                - img [ref=e42]
+                - generic [ref=e45]: 🔍 Optimización de Procesos
+              - generic [ref=e47]: Analizamos, simplificamos y potenciamos tus flujos de trabajo para lograr resultados medibles.
+            - generic [ref=e49]:
+              - generic [ref=e50]:
+                - img [ref=e52]
+                - generic [ref=e54]: 🔒 Soluciones Confiables
+              - generic [ref=e56]: Tecnología robusta y segura, con resultados probados y soporte experto en cada paso.
+            - generic [ref=e58]:
+              - generic [ref=e59]:
+                - img [ref=e61]
+                - generic [ref=e64]: ⏱️ Ahorro de Tiempo
+              - generic [ref=e66]: Automatizá hasta el 80 % de tus tareas rutinarias y liberá recursos para innovar.
+            - generic [ref=e68]:
+              - generic [ref=e69]:
+                - img [ref=e71]
+                - generic [ref=e76]: 🤝 Soporte Continuo
+              - generic [ref=e78]: Te acompañamos antes, durante y después de la implementación.
+            - generic [ref=e80]:
+              - generic [ref=e81]:
+                - img [ref=e83]
+                - generic [ref=e86]: 🚀 Innovación Constante
+              - generic [ref=e88]: Actualizamos nuestras soluciones con las últimas tecnologías en IA y automatización.
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - generic [ref=e94]: Comenzá Hoy
+            - generic [ref=e95]: 🚀 Empezá hoy tu transformación digital
+            - generic [ref=e96]:
+              - text: Cada proceso optimizado es un paso hacia un negocio más rentable.
+              - text: 💬 Agenda una consulta gratuita y descubrí cómo la automatización puede cambiar tu forma de trabajar.
+          - generic [ref=e97]:
+            - link "Solicitar Consulta" [ref=e98] [cursor=pointer]:
+              - /url: /contacto
+            - link "Conocer Más" [ref=e99] [cursor=pointer]:
+              - /url: /nosotros
+    - contentinfo [ref=e100]:
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - generic [ref=e103]:
+            - heading "SolutiveMind" [level=3] [ref=e104]
+            - paragraph [ref=e105]: Servicios automatizados para impulsar tu negocio con tecnología de vanguardia.
+          - generic [ref=e106]:
+            - heading "Enlaces Rápidos" [level=3] [ref=e107]
+            - navigation [ref=e108]:
+              - link "Inicio" [ref=e109] [cursor=pointer]:
+                - /url: /
+              - link "Servicios" [ref=e110] [cursor=pointer]:
+                - /url: /servicios
+              - link "Sobre Nosotros" [ref=e111] [cursor=pointer]:
+                - /url: /nosotros
+              - link "Contacto" [ref=e112] [cursor=pointer]:
+                - /url: /contacto
+          - generic [ref=e113]:
+            - heading "Contacto" [level=3] [ref=e114]
+            - generic [ref=e115]:
+              - generic [ref=e116]:
+                - img [ref=e117]
+                - link "contacto@solutivemind.com" [ref=e120] [cursor=pointer]:
+                  - /url: mailto:contacto@solutivemind.com
+              - generic [ref=e121]:
+                - img [ref=e122]
+                - link "+54 9 11 2409 0216" [ref=e124] [cursor=pointer]:
+                  - /url: tel:+54 9 11 2409 0216
+              - generic [ref=e125]:
+                - img [ref=e126]
+                - generic [ref=e129]: Buenos Aires, Argentina
+        - paragraph [ref=e131]: © 2025 SolutiveMind. Todos los derechos reservados.
+  - button "Contactar por WhatsApp" [ref=e132]:
+    - img
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e138] [cursor=pointer]:
+    - img [ref=e139]
+  - alert [ref=e142]
+```

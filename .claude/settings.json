@@ -23,7 +23,12 @@
       "Bash(cat:*)",
       "Bash(git rev-parse:*)",
       "Bash(git config:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(npm install:*)",
+      "Bash(npx playwright test:*)",
+      "Bash(pkill:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs kill -9)"
 
     ]
   },

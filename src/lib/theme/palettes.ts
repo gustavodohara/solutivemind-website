@@ -161,12 +161,79 @@ export const originalPalette: ThemePalette = {
   },
 }
 
+// Superlist-inspired Palette
+export const superlistPalette: ThemePalette = {
+  name: 'Superlist',
+  description: 'Bold, modern palette inspired by Superlist with dark backgrounds and vibrant accents',
+  light: {
+    // Very light, subtle gray background
+    background: 'oklch(0.97 0.005 240)',
+    // Deep, almost black text for maximum contrast
+    foreground: 'oklch(0.15 0.02 240)',
+    // Pure white cards that pop
+    card: 'oklch(1 0 0)',
+    cardForeground: 'oklch(0.15 0.02 240)',
+    popover: 'oklch(1 0 0)',
+    popoverForeground: 'oklch(0.15 0.02 240)',
+    // Vibrant red primary (Superlist-inspired)
+    primary: 'oklch(0.55 0.20 10)',
+    primaryForeground: 'oklch(1 0 0)',
+    // Deep blue secondary
+    secondary: 'oklch(0.45 0.15 250)',
+    secondaryForeground: 'oklch(1 0 0)',
+    // Bright blue accent
+    accent: 'oklch(0.65 0.22 200)',
+    accentForeground: 'oklch(0.15 0.02 240)',
+    // Subtle gray muted elements
+    muted: 'oklch(0.94 0.005 240)',
+    mutedForeground: 'oklch(0.50 0.01 240)',
+    // Standard destructive
+    destructive: 'oklch(0.577 0.245 27.325)',
+    destructiveForeground: 'oklch(0.985 0 0)',
+    // Light borders
+    border: 'oklch(0.88 0.005 240)',
+    input: 'oklch(0.88 0.005 240)',
+    ring: 'oklch(0.55 0.20 10)',
+  },
+  dark: {
+    // Very dark, almost black background (Superlist style)
+    background: 'oklch(0.15 0.02 240)',
+    // Almost white foreground for high contrast
+    foreground: 'oklch(0.95 0.01 240)',
+    // Slightly lighter cards
+    card: 'oklch(0.18 0.02 240)',
+    cardForeground: 'oklch(0.95 0.01 240)',
+    popover: 'oklch(0.18 0.02 240)',
+    popoverForeground: 'oklch(0.95 0.01 240)',
+    // Brighter vibrant red for dark mode
+    primary: 'oklch(0.60 0.20 10)',
+    primaryForeground: 'oklch(1 0 0)',
+    // Lighter deep blue
+    secondary: 'oklch(0.50 0.15 250)',
+    secondaryForeground: 'oklch(1 0 0)',
+    // Bright blue accent
+    accent: 'oklch(0.70 0.22 200)',
+    accentForeground: 'oklch(0.15 0.02 240)',
+    // Dark muted elements
+    muted: 'oklch(0.25 0.03 240)',
+    mutedForeground: 'oklch(0.65 0.01 240)',
+    // Destructive for dark mode
+    destructive: 'oklch(0.704 0.191 22.216)',
+    destructiveForeground: 'oklch(0.985 0 0)',
+    // Subtle borders with transparency
+    border: 'oklch(1 0 0 / 10%)',
+    input: 'oklch(1 0 0 / 15%)',
+    ring: 'oklch(0.60 0.20 10)',
+  },
+}
+
 // Export active palette
-export const activePalette = solutiveMindPalette
+export const activePalette = superlistPalette
 
 // Export all palettes
 export const allPalettes = {
   solutiveMind: solutiveMindPalette,
   original: originalPalette,
+  superlist: superlistPalette,
 }
 

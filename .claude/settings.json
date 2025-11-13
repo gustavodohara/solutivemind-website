@@ -3,7 +3,17 @@
     "allow": [
       "Bash(./hack/spec_metadata.sh)",
       "Bash(hack/spec_metadata.sh)",
-      "Bash(bash hack/spec_metadata.sh)"
+      "Bash(bash hack/spec_metadata.sh)",
+      "Bash(find:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm install)",
+      "Bash(git rev-parse:*)",
+      "Bash(git add:*)",
+      "Bash(npm run generate-theme:*)",
+      "Bash(npm run lint)",
+      "Bash(npm run build:*)",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_console_messages"
     ]
   },
   "enableAllProjectMcpServers": false

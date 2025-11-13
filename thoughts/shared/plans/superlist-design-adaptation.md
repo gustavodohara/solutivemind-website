@@ -213,18 +213,18 @@ export const THEME_CONFIG = {
 ### Success Criteria
 
 #### Automated Verification:
-- [ ] Type checking passes: `npm run build` (dry run, no errors)
-- [ ] Linting passes: `npm run lint`
-- [ ] Theme script executes successfully: `npm run generate-theme superlist`
-- [ ] Dev server starts without errors: `npm run dev`
+- [x] Type checking passes: `npm run build` (dry run, no errors)
+- [x] Linting passes: `npm run lint`
+- [x] Theme script executes successfully: `npm run generate-theme superlist`
+- [x] Dev server starts without errors: `npm run dev`
 
 #### Manual Verification:
-- [ ] Navigate to `http://localhost:3000` - colors reflect new palette
-- [ ] Navigate to `http://localhost:3000/theme-demo` - all color tokens visible
-- [ ] Toggle theme (light/dark) - both modes work with new colors
-- [ ] Check contrast with browser DevTools - WCAG AA compliance
-- [ ] Take Playwright screenshots of home and theme-demo in both modes
-- [ ] No console errors in browser
+- [x] Navigate to `http://localhost:3000` - colors reflect new palette
+- [x] Navigate to `http://localhost:3000/theme-demo` - all color tokens visible
+- [x] Toggle theme (light/dark) - both modes work with new colors
+- [x] Check contrast with browser DevTools - WCAG AA compliance
+- [x] Take Playwright screenshots of home and theme-demo in both modes
+- [x] No console errors in browser
 
 **Playwright Testing Commands:**
 ```bash

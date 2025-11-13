@@ -1,9 +1,16 @@
-import Link from 'next/link'
+'use client'
+
+import { useEffect, useState } from 'react'
 import { Mail, MapPin, Phone } from 'lucide-react'
-import { CONTACT_INFO, NAV_ITEMS } from '@/lib/constants/navigation'
+import { CONTACT_INFO } from '@/lib/constants/navigation'
+import { SCROLL_SECTIONS } from '@/lib/constants/scroll-navigation'
 
 export function Footer() {
-  const currentYear = new Date().getFullYear()
+  const [currentYear, setCurrentYear] = useState(2024)
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear())
+  }, [])
 
   return (
     <footer className="bg-muted/50 border-t">
@@ -21,14 +28,21 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Enlaces Rápidos</h3>
             <nav className="flex flex-col space-y-2">
-              {NAV_ITEMS.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
+              {SCROLL_SECTIONS.map((section) => (
+                <a
+                  key={section.id}
+                  href={section.href}
                   className="text-muted-foreground hover:text-primary text-sm transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    const element = document.getElementById(section.id)
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' })
+                    }
+                  }}
                 >
-                  {item.label}
-                </Link>
+                  {section.label}
+                </a>
               ))}
             </nav>
           </div>

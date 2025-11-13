@@ -97,7 +97,7 @@ export default function HomePage() {
 
       {/* Features Section */}
       <FeaturesSection
-        title="💼 ¿Por qué elegir SolutiveMind :)?"
+        title="💼 ¿Por qué elegir SolutiveMind?"
         description="Soluciones completas de automatización diseñadas para llevar tu negocio al siguiente nivel."
         features={features}
       />

@@ -8,7 +8,7 @@ export function AboutSection() {
           {/* Header */}
           <div className="text-center space-y-4">
             <h2 className="text-3xl font-light tracking-tight sm:text-4xl md:text-5xl">
-              🧠 Sobre SolutiveMind
+              Sobre SolutiveMind
             </h2>
             <p className="text-muted-foreground text-lg">
               Impulsamos la transformación digital de las empresas a través de automatización
@@ -18,7 +18,7 @@ export function AboutSection() {
 
           {/* Who We Are */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-semibold">💡 Quiénes somos</h3>
+            <h3 className="text-2xl font-semibold">Quiénes somos</h3>
             <div className="prose prose-slate dark:prose-invert max-w-none">
               <p className="text-muted-foreground text-lg leading-relaxed">
                 En SolutiveMind, creemos que la tecnología tiene que adaptarse a las personas, no
@@ -32,7 +32,7 @@ export function AboutSection() {
           <div className="grid gap-6 md:grid-cols-3">
             <Card>
               <CardHeader>
-                <CardTitle>🎯 Misión</CardTitle>
+                <CardTitle>Misión</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">
@@ -44,7 +44,7 @@ export function AboutSection() {
 
             <Card>
               <CardHeader>
-                <CardTitle>🌍 Visión</CardTitle>
+                <CardTitle>Visión</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">
@@ -55,14 +55,14 @@ export function AboutSection() {
 
             <Card>
               <CardHeader>
-                <CardTitle>💎 Valores</CardTitle>
+                <CardTitle>Valores</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="text-muted-foreground space-y-1 text-sm">
-                  <li>🚀 Innovación</li>
-                  <li>🧩 Excelencia</li>
-                  <li>🤝 Compromiso</li>
-                  <li>💬 Transparencia</li>
+                  <li>Innovación</li>
+                  <li>Excelencia</li>
+                  <li>Compromiso</li>
+                  <li>Transparencia</li>
                 </ul>
               </CardContent>
             </Card>

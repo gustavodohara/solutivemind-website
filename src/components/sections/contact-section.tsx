@@ -8,7 +8,7 @@ export function ContactSection() {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-12 max-w-2xl text-center space-y-4">
           <h2 className="text-3xl font-light tracking-tight sm:text-4xl md:text-5xl">
-            💬 Contáctanos
+            Contáctanos
           </h2>
           <p className="text-muted-foreground text-lg">
             ¿Tenés preguntas o querés saber cómo la automatización puede transformar tu negocio?
@@ -20,7 +20,7 @@ export function ContactSection() {
           <div className="lg:col-span-2">
             <Card>
               <CardHeader>
-                <CardTitle>📩 Envíanos un mensaje</CardTitle>
+                <CardTitle>Envíanos un mensaje</CardTitle>
                 <CardDescription>
                   Completá el formulario y un especialista de nuestro equipo se pondrá en contacto
                   con vos.
@@ -36,12 +36,12 @@ export function ContactSection() {
           <div className="space-y-6">
             <Card>
               <CardHeader>
-                <CardTitle>📞 Otros medios</CardTitle>
+                <CardTitle>Otros medios</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
                   <p className="text-muted-foreground text-sm">
-                    📧 Email:{' '}
+                    Email:{' '}
                     <a
                       href={`mailto:${CONTACT_INFO.email}`}
                       className="text-primary hover:underline"
@@ -52,7 +52,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="text-muted-foreground text-sm">
-                    💬 WhatsApp:{' '}
+                    WhatsApp:{' '}
                     <a
                       href={`https://wa.me/${CONTACT_INFO.whatsapp}`}
                       target="_blank"

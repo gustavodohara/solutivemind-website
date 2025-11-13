@@ -25,35 +25,35 @@ export const metadata: Metadata = {
 const features = [
   {
     icon: Zap,
-    title: '⚙️ Automatización Inteligente',
+    title: 'Automatización Inteligente',
     description:
       'Eliminamos tareas repetitivas para que tu equipo pueda enfocarse en la estrategia y el crecimiento.',
   },
   {
     icon: TrendingUp,
-    title: '🔍 Optimización de Procesos',
+    title: 'Optimización de Procesos',
     description:
       'Analizamos, simplificamos y potenciamos tus flujos de trabajo para lograr resultados medibles.',
   },
   {
     icon: Shield,
-    title: '🔒 Soluciones Confiables',
+    title: 'Soluciones Confiables',
     description:
       'Tecnología robusta y segura, con resultados probados y soporte experto en cada paso.',
   },
   {
     icon: Clock,
-    title: '⏱️ Ahorro de Tiempo',
+    title: 'Ahorro de Tiempo',
     description: 'Automatizá hasta el 80 % de tus tareas rutinarias y liberá recursos para innovar.',
   },
   {
     icon: Users,
-    title: '🤝 Soporte Continuo',
+    title: 'Soporte Continuo',
     description: 'Te acompañamos antes, durante y después de la implementación.',
   },
   {
     icon: Sparkles,
-    title: '🚀 Innovación Constante',
+    title: 'Innovación Constante',
     description: 'Actualizamos nuestras soluciones con las últimas tecnologías en IA y automatización.',
   },
 ]
@@ -68,7 +68,7 @@ export default function HomePage() {
         id="inicio"
         title={
           <>
-            🧠 Transforma tu negocio con{' '}
+            Transforma tu negocio con{' '}
             <span className="text-primary">automatización inteligente</span>
           </>
         }
@@ -78,9 +78,9 @@ export default function HomePage() {
             aumentan la productividad.
             <br />
             <br />
-            🔹 Menos tareas manuales.
+            Menos tareas manuales.
             <br />
-            🔹 Más enfoque en lo que realmente importa.
+            Más enfoque en lo que realmente importa.
           </>
         }
         actions={
@@ -98,7 +98,7 @@ export default function HomePage() {
       {/* Features Section */}
       <FeaturesSection
         id="features"
-        title="💼 ¿Por qué elegir SolutiveMind?"
+        title="¿Por qué elegir SolutiveMind?"
         description="Soluciones completas de automatización diseñadas para llevar tu negocio al siguiente nivel."
         features={features}
       />
@@ -119,12 +119,12 @@ export default function HomePage() {
             <CardHeader className="text-center">
               <Badge className="mx-auto mb-4 w-fit">Comenzá Hoy</Badge>
               <CardTitle className="text-3xl sm:text-4xl font-light">
-                🚀 Empezá hoy tu transformación digital
+                Empezá hoy tu transformación digital
               </CardTitle>
               <CardDescription className="mt-4 text-lg">
                 Cada proceso optimizado es un paso hacia un negocio más rentable.
                 <br />
-                💬 Agenda una consulta gratuita y descubrí cómo la automatización puede cambiar tu
+                Agenda una consulta gratuita y descubrí cómo la automatización puede cambiar tu
                 forma de trabajar.
               </CardDescription>
             </CardHeader>

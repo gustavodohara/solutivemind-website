@@ -11,7 +11,7 @@ export function ServicesSection({ products }: ServicesSectionProps) {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <h2 className="mb-4 text-3xl font-light tracking-tight sm:text-4xl md:text-5xl">
-            ⚙️ Nuestros Servicios
+            Nuestros Servicios
           </h2>
           <p className="text-muted-foreground text-lg">
             Descubrí cómo la automatización inteligente puede transformar tu negocio, optimizar

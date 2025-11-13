@@ -162,12 +162,12 @@ export function ContactForm() {
               <FormLabel>Cuéntanos cómo podemos ayudarte…</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="✍️ Hasta 1000 caracteres"
+                  placeholder="Hasta 1000 caracteres"
                   className="min-h-[120px] resize-none"
                   {...field}
                 />
               </FormControl>
-              <FormDescription>✍️ Hasta 1000 caracteres</FormDescription>
+              <FormDescription>Hasta 1000 caracteres</FormDescription>
               <FormMessage />
             </FormItem>
           )}

@@ -16,7 +16,8 @@
     "test:coverage": "vitest --coverage",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
-    "test:e2e:headed": "playwright test --headed"
+    "test:e2e:headed": "playwright test --headed",
+    "generate-theme": "tsx scripts/generate-theme.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

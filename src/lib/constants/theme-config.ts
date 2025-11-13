@@ -1,16 +1,16 @@
 /**
  * CONFIGURACIÓN DE COLORES DEL TEMA
  *
- * Para cambiar los colores del sitio, modifica los valores OKLCH en src/app/globals.css
+ * Este archivo re-exporta la paleta activa para fácil referencia.
+ * Las definiciones de paletas están en src/lib/theme/palettes.ts
  *
- * Busca las variables marcadas con "CUSTOMIZABLE":
- * - --primary: Color principal de marca (botones, links, CTA)
- * - --secondary: Color secundario (fondos, cards)
- * - --accent: Color de acento (highlights, badges)
- * - --radius: Border radius global (0.5rem = redondeado medio)
+ * Para cambiar temas:
+ * 1. Edita src/lib/theme/palettes.ts
+ * 2. Ejecuta: npm run generate-theme [nombre-paleta]
+ * 3. Copia el CSS generado a src/app/globals.css
  *
  * Formato OKLCH: oklch(lightness chroma hue)
- * Ejemplo: oklch(0.55 0.22 250)
+ * Ejemplo: oklch(0.69 0.11 198)
  *          └─light └─chroma └─hue
  *
  * - Lightness (0-1): Claridad (0=negro, 1=blanco)
@@ -22,17 +22,20 @@
  * - https://www.sessions.edu/color-calculator/ - Calcular paletas
  */
 
+export { activePalette, allPalettes } from '@/lib/theme/palettes'
+
+// Para compatibilidad hacia atrás
 export const THEME_CONFIG = {
   // Valores por defecto (referencia)
   light: {
-    primary: 'oklch(0.55 0.22 250)', // Azul vibrante
-    secondary: 'oklch(0.97 0 0)', // Gris muy claro
-    accent: 'oklch(0.97 0 0)', // Mismo que secondary
+    primary: 'oklch(0.69 0.11 198)', // Cyan
+    secondary: 'oklch(0.32 0.08 245)', // Dark blue
+    accent: 'oklch(0.92 0.22 125)', // Lime green
   },
   dark: {
-    primary: 'oklch(0.65 0.22 250)', // Azul más claro para contraste
-    secondary: 'oklch(0.269 0 0)', // Gris oscuro
-    accent: 'oklch(0.269 0 0)', // Mismo que secondary
+    primary: 'oklch(0.75 0.11 198)', // Brighter cyan
+    secondary: 'oklch(0.40 0.08 245)', // Lighter dark blue
+    accent: 'oklch(0.90 0.22 125)', // Bright lime
   },
 } as const
 

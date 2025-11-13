@@ -35,7 +35,7 @@ export function Hero({ id, title, description, actions, className }: HeroProps) 
       </div>
 
       <div className="relative w-full px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl space-y-8 text-center">
+        <div className="mx-auto max-w-3xl space-y-8 text-center">
           {typeof title === 'string' ? (
             <h1 className="text-5xl font-light tracking-tight sm:text-6xl md:text-7xl lg:text-8xl text-gray-900 dark:text-white leading-tight">
               {title}

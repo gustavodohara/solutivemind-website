@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet'
 import { NAV_ITEMS } from '@/lib/constants/navigation'
+import { SCROLL_SECTIONS } from '@/lib/constants/scroll-navigation'
 
 interface MobileNavProps {
   open: boolean
@@ -17,15 +18,22 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
           <SheetTitle>Menú</SheetTitle>
         </SheetHeader>
         <nav className="mt-6 flex flex-col space-y-4">
-          {NAV_ITEMS.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => onOpenChange(false)}
+          {SCROLL_SECTIONS.map((section) => (
+            <a
+              key={section.id}
+              href={section.href}
+              onClick={(e) => {
+                e.preventDefault()
+                const element = document.getElementById(section.id)
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' })
+                }
+                onOpenChange(false)
+              }}
               className="hover:text-primary text-lg font-medium transition-colors"
             >
-              {item.label}
-            </Link>
+              {section.label}
+            </a>
           ))}
         </nav>
       </SheetContent>

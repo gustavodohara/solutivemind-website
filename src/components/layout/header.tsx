@@ -6,6 +6,7 @@ import { Menu } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { ThemeToggleSimple } from '@/components/ui/theme-toggle-simple'
 import { NAV_ITEMS } from '@/lib/constants/navigation'
+import { SCROLL_SECTIONS } from '@/lib/constants/scroll-navigation'
 import { MobileNav } from './mobile-nav'
 import { useActivePath } from '@/lib/hooks/use-active-path'
 import { cn } from '@/lib/utils'
@@ -24,17 +25,21 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center space-x-6 md:flex">
-          {NAV_ITEMS.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={cn(
-                'hover:text-primary text-sm font-medium transition-colors',
-                isActive(item.href) ? 'text-primary' : 'text-muted-foreground'
-              )}
+          {SCROLL_SECTIONS.map((section) => (
+            <a
+              key={section.id}
+              href={section.href}
+              className="hover:text-primary text-sm font-medium transition-colors text-muted-foreground"
+              onClick={(e) => {
+                e.preventDefault()
+                const element = document.getElementById(section.id)
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' })
+                }
+              }}
             >
-              {item.label}
-            </Link>
+              {section.label}
+            </a>
           ))}
         </nav>
 

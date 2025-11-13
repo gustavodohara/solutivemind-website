@@ -167,4 +167,14 @@
   }
 }
 
+/* Smooth scroll behavior for anchor navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll margin to account for fixed header (h-16 = 64px) */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
 /* Force refresh - Updated colors: #0F4C75, #00B7C2, #1B262C, #F4F9FA, #B5FF4A */

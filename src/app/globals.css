@@ -47,29 +47,29 @@
   /* Border radius - CUSTOMIZABLE */
   --radius: 0.5rem;
 
-  /* Background colors */
-  --background: oklch(0.98 0.005 210);      /* #F4F9FA - Very light blue */
-  --foreground: oklch(0.16 0.01 230);       /* #1B262C - Very dark gray */
+  /* Background colors - Updated 2025 */
+  --background: oklch(0.98 0.005 210);      /* #F4F9FA - Fondo blanco grisáceo */
+  --foreground: oklch(0.32 0.08 245);       /* #0F4C75 - Textos fuertes */
 
   /* Card colors */
   --card: oklch(1 0 0);                     /* Pure white for cards */
-  --card-foreground: oklch(0.16 0.01 230);  /* Very dark gray text */
+  --card-foreground: oklch(0.32 0.08 245);  /* #0F4C75 - Textos fuertes */
 
   /* Popover colors */
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.16 0.01 230);
+  --popover-foreground: oklch(0.32 0.08 245);
 
   /* Primary brand colors - CUSTOMIZABLE */
   --primary: oklch(0.69 0.11 198);          /* #00B7C2 - Cyan */
   --primary-foreground: oklch(1 0 0);       /* White text */
 
   /* Secondary colors - CUSTOMIZABLE */
-  --secondary: oklch(0.32 0.08 245);        /* #0F4C75 - Dark blue */
+  --secondary: oklch(0.32 0.08 245);        /* #0F4C75 - Dark blue (textos fuertes) */
   --secondary-foreground: oklch(1 0 0);     /* White text */
 
   /* Accent colors - CUSTOMIZABLE */
-  --accent: oklch(0.92 0.22 125);           /* #B5FF4A - Lime green */
-  --accent-foreground: oklch(0.16 0.01 230); /* Dark text for contrast */
+  --accent: oklch(0.92 0.22 125);           /* #B5FF4A - Lime green (subrayados/marcadores) */
+  --accent-foreground: oklch(0.32 0.08 245); /* #0F4C75 - Dark text for contrast */
 
   /* Muted colors */
   --muted: oklch(0.95 0.005 210);           /* Slightly darker than background */
@@ -93,19 +93,19 @@
 
   /* Sidebar colors */
   --sidebar: oklch(0.98 0.005 210);
-  --sidebar-foreground: oklch(0.16 0.01 230);
+  --sidebar-foreground: oklch(0.32 0.08 245);
   --sidebar-primary: oklch(0.69 0.11 198);
   --sidebar-primary-foreground: oklch(1 0 0);
   --sidebar-accent: oklch(0.95 0.005 210);
-  --sidebar-accent-foreground: oklch(0.16 0.01 230);
+  --sidebar-accent-foreground: oklch(0.32 0.08 245);
   --sidebar-border: oklch(0.90 0.005 210);
   --sidebar-ring: oklch(0.69 0.11 198);
 }
 
 .dark {
   /* Dark mode background */
-  --background: oklch(0.16 0.01 230);       /* #1B262C - Very dark gray */
-  --foreground: oklch(0.98 0.005 210);      /* Very light blue */
+  --background: oklch(0.16 0.01 230);       /* #1B262C - Toques de contraste */
+  --foreground: oklch(0.98 0.005 210);      /* #F4F9FA - Texto claro */
 
   /* Dark mode cards */
   --card: oklch(0.20 0.01 230);             /* Slightly lighter than background */
@@ -120,11 +120,11 @@
   --primary-foreground: oklch(0.16 0.01 230); /* Dark background */
 
   /* Dark mode secondary - CUSTOMIZABLE */
-  --secondary: oklch(0.40 0.08 245);        /* Lighter dark blue */
+  --secondary: oklch(0.40 0.08 245);        /* Lighter dark blue (#0F4C75 variación) */
   --secondary-foreground: oklch(0.98 0.005 210);
 
   /* Dark mode accent - CUSTOMIZABLE */
-  --accent: oklch(0.90 0.22 125);           /* Bright lime (slightly darker) */
+  --accent: oklch(0.90 0.22 125);           /* Bright lime (#B5FF4A variación) */
   --accent-foreground: oklch(0.16 0.01 230); /* Dark text */
 
   /* Dark mode muted */
@@ -166,3 +166,5 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Force refresh - Updated colors: #0F4C75, #00B7C2, #1B262C, #F4F9FA, #B5FF4A */

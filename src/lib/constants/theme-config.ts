@@ -1,32 +1,32 @@
 /**
- * CONFIGURACIÓN DE COLORES DEL TEMA
+ * THEME CONFIGURATION
  *
- * Este archivo re-exporta la paleta activa para fácil referencia.
- * Las definiciones de paletas están en src/lib/theme/palettes.ts
+ * This file re-exports the active theme palette for easy reference.
+ * The actual palette definitions are in src/lib/theme/palettes.ts
  *
- * Para cambiar temas:
- * 1. Edita src/lib/theme/palettes.ts
- * 2. Ejecuta: npm run generate-theme [nombre-paleta]
- * 3. Copia el CSS generado a src/app/globals.css
+ * To change themes:
+ * 1. Edit src/lib/theme/palettes.ts
+ * 2. Run: npm run generate-theme [palette-name]
+ * 3. Copy generated CSS to src/app/globals.css (lines 46-159)
  *
- * Formato OKLCH: oklch(lightness chroma hue)
- * Ejemplo: oklch(0.69 0.11 198)
- *          └─light └─chroma └─hue
+ * OKLCH Format: oklch(lightness chroma hue)
+ * Example: oklch(0.69 0.11 198)
+ *          └─lightness └─chroma └─hue
  *
- * - Lightness (0-1): Claridad (0=negro, 1=blanco)
- * - Chroma (0-0.4): Intensidad del color
- * - Hue (0-360): El color base (0=rojo, 120=verde, 240=azul)
+ * - Lightness (0-1): Brightness (0=black, 1=white)
+ * - Chroma (0-0.4): Color intensity/saturation
+ * - Hue (0-360): Color angle (0=red, 120=green, 240=blue)
  *
- * Herramientas útiles:
- * - https://oklch.com/ - Color picker para OKLCH
- * - https://www.sessions.edu/color-calculator/ - Calcular paletas
+ * Useful tools:
+ * - https://oklch.com/ - OKLCH color picker
+ * - https://www.sessions.edu/color-calculator/ - Palette calculator
  */
 
 export { activePalette, allPalettes } from '@/lib/theme/palettes'
 
-// Para compatibilidad hacia atrás
+// Current active palette values for reference
+// These are automatically loaded from activePalette in palettes.ts
 export const THEME_CONFIG = {
-  // Valores por defecto (referencia)
   light: {
     primary: 'oklch(0.69 0.11 198)', // Cyan
     secondary: 'oklch(0.32 0.08 245)', // Dark blue
@@ -39,11 +39,15 @@ export const THEME_CONFIG = {
   },
 } as const
 
-// Ejemplos de paletas alternativas:
+// Example color palettes for inspiration
+// Note: These are examples only. To create a working palette:
+// 1. Add it to src/lib/theme/palettes.ts with full color definitions
+// 2. Run: npm run generate-theme [palette-name]
+// 3. Copy output to src/app/globals.css
 export const EXAMPLE_PALETTES = {
   green: {
     light: {
-      primary: 'oklch(0.55 0.18 145)', // Verde esmeralda
+      primary: 'oklch(0.55 0.18 145)', // Emerald green
       secondary: 'oklch(0.97 0 0)',
       accent: 'oklch(0.55 0.18 145)',
     },
@@ -55,7 +59,7 @@ export const EXAMPLE_PALETTES = {
   },
   purple: {
     light: {
-      primary: 'oklch(0.55 0.24 300)', // Púrpura
+      primary: 'oklch(0.55 0.24 300)', // Purple
       secondary: 'oklch(0.97 0 0)',
       accent: 'oklch(0.55 0.24 300)',
     },
@@ -67,7 +71,7 @@ export const EXAMPLE_PALETTES = {
   },
   orange: {
     light: {
-      primary: 'oklch(0.65 0.20 50)', // Naranja vibrante
+      primary: 'oklch(0.65 0.20 50)', // Vibrant orange
       secondary: 'oklch(0.97 0 0)',
       accent: 'oklch(0.65 0.20 50)',
     },
@@ -79,7 +83,7 @@ export const EXAMPLE_PALETTES = {
   },
   red: {
     light: {
-      primary: 'oklch(0.55 0.22 25)', // Rojo
+      primary: 'oklch(0.55 0.22 25)', // Red
       secondary: 'oklch(0.97 0 0)',
       accent: 'oklch(0.55 0.22 25)',
     },

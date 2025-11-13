@@ -55,22 +55,28 @@ export interface ThemePalette {
 }
 
 // New SolutiveMind Palette (from coolors.co)
+// Paleta: #0F4C75 (textos fuertes), #00B7C2 (cyan), #1B262C (contraste), #F4F9FA (fondo), #B5FF4A (marcadores)
 export const solutiveMindPalette: ThemePalette = {
   name: 'SolutiveMind',
-  description: 'Professional cyan and lime green palette',
+  description: 'Professional palette with cyan primary, dark blue secondary, and lime green accents',
   light: {
+    // Fondo blanco grisáceo: #F4F9FA
     background: 'oklch(0.98 0.005 210)',
-    foreground: 'oklch(0.16 0.01 230)',
+    // Textos fuertes: #0F4C75
+    foreground: 'oklch(0.32 0.08 245)',
     card: 'oklch(1 0 0)',
-    cardForeground: 'oklch(0.16 0.01 230)',
+    cardForeground: 'oklch(0.32 0.08 245)',
     popover: 'oklch(1 0 0)',
-    popoverForeground: 'oklch(0.16 0.01 230)',
+    popoverForeground: 'oklch(0.32 0.08 245)',
+    // Color principal: #00B7C2 (cyan)
     primary: 'oklch(0.69 0.11 198)',
     primaryForeground: 'oklch(1 0 0)',
+    // Color secundario: #0F4C75 (textos fuertes/dark blue)
     secondary: 'oklch(0.32 0.08 245)',
     secondaryForeground: 'oklch(1 0 0)',
+    // Acento: #B5FF4A (lime green - subrayados/marcadores)
     accent: 'oklch(0.92 0.22 125)',
-    accentForeground: 'oklch(0.16 0.01 230)',
+    accentForeground: 'oklch(0.32 0.08 245)',
     muted: 'oklch(0.95 0.005 210)',
     mutedForeground: 'oklch(0.50 0.01 230)',
     destructive: 'oklch(0.577 0.245 27.325)',
@@ -80,16 +86,21 @@ export const solutiveMindPalette: ThemePalette = {
     ring: 'oklch(0.69 0.11 198)',
   },
   dark: {
+    // Fondo oscuro: #1B262C (toques de contraste)
     background: 'oklch(0.16 0.01 230)',
+    // Texto claro: #F4F9FA
     foreground: 'oklch(0.98 0.005 210)',
     card: 'oklch(0.20 0.01 230)',
     cardForeground: 'oklch(0.98 0.005 210)',
     popover: 'oklch(0.20 0.01 230)',
     popoverForeground: 'oklch(0.98 0.005 210)',
+    // Primary más claro para dark mode
     primary: 'oklch(0.75 0.11 198)',
     primaryForeground: 'oklch(0.16 0.01 230)',
+    // Secondary más claro: #0F4C75 variación
     secondary: 'oklch(0.40 0.08 245)',
     secondaryForeground: 'oklch(0.98 0.005 210)',
+    // Accent más claro para dark mode
     accent: 'oklch(0.90 0.22 125)',
     accentForeground: 'oklch(0.16 0.01 230)',
     muted: 'oklch(0.22 0.01 230)',

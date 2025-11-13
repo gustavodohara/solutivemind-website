@@ -8,19 +8,20 @@ interface Feature {
 }
 
 interface FeaturesSectionProps {
+  id?: string
   title?: string
   description?: string
   features: Feature[]
 }
 
-export function FeaturesSection({ title, description, features }: FeaturesSectionProps) {
+export function FeaturesSection({ id, title, description, features }: FeaturesSectionProps) {
   return (
-    <section className="py-16 md:py-24">
+    <section id={id} className="py-20 md:py-32 border-t">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         {(title || description) && (
           <div className="mx-auto mb-12 max-w-2xl text-center">
             {title && (
-              <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">{title}</h2>
+              <h2 className="mb-4 text-3xl font-light tracking-tight sm:text-4xl md:text-5xl">{title}</h2>
             )}
             {description && <p className="text-muted-foreground text-lg">{description}</p>}
           </div>

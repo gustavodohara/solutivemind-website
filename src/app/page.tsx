@@ -1,11 +1,14 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
 import { Zap, Shield, TrendingUp, Clock, Users, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Hero } from '@/components/layout/hero'
 import { FeaturesSection } from '@/components/layout/features-section'
+import { ServicesSection } from '@/components/sections/services-section'
+import { AboutSection } from '@/components/sections/about-section'
+import { ContactSection } from '@/components/sections/contact-section'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { getAllProducts } from '@/lib/data/products'
 
 export const metadata: Metadata = {
   title: 'SolutiveMind - Servicios de Automatización Empresarial',
@@ -56,10 +59,13 @@ const features = [
 ]
 
 export default function HomePage() {
+  const products = getAllProducts()
+
   return (
     <div>
       {/* Hero Section */}
       <Hero
+        id="inicio"
         title={
           <>
             🧠 Transforma tu negocio con{' '}
@@ -75,21 +81,15 @@ export default function HomePage() {
             🔹 Menos tareas manuales.
             <br />
             🔹 Más enfoque en lo que realmente importa.
-            <br />
-            <br />
-            👉 Descubrí cómo →{' '}
-            <Link href="/servicios" className="text-primary underline hover:text-primary/80">
-              Ver Servicios
-            </Link>
           </>
         }
         actions={
           <>
             <Button size="lg" asChild>
-              <Link href="/servicios">Ver Servicios</Link>
+              <a href="#servicios">Ver Servicios</a>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link href="/contacto">Contactar</Link>
+              <a href="#contacto">Contactar</a>
             </Button>
           </>
         }
@@ -97,18 +97,28 @@ export default function HomePage() {
 
       {/* Features Section */}
       <FeaturesSection
+        id="features"
         title="💼 ¿Por qué elegir SolutiveMind?"
         description="Soluciones completas de automatización diseñadas para llevar tu negocio al siguiente nivel."
         features={features}
       />
 
-      {/* CTA Section */}
-      <section className="bg-muted/50 border-t py-16 md:py-24">
+      {/* Services Section */}
+      <ServicesSection products={products} />
+
+      {/* About Section */}
+      <AboutSection />
+
+      {/* Contact Section */}
+      <ContactSection />
+
+      {/* Final CTA Section */}
+      <section className="bg-muted/50 border-t py-20 md:py-32">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <Card className="mx-auto max-w-3xl border-2">
             <CardHeader className="text-center">
               <Badge className="mx-auto mb-4 w-fit">Comenzá Hoy</Badge>
-              <CardTitle className="text-3xl sm:text-4xl">
+              <CardTitle className="text-3xl sm:text-4xl font-light">
                 🚀 Empezá hoy tu transformación digital
               </CardTitle>
               <CardDescription className="mt-4 text-lg">
@@ -120,10 +130,10 @@ export default function HomePage() {
             </CardHeader>
             <CardContent className="flex flex-col justify-center gap-4 sm:flex-row">
               <Button size="lg" asChild>
-                <Link href="/contacto">Solicitar Consulta</Link>
+                <a href="#contacto">Solicitar Consulta</a>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <Link href="/nosotros">Conocer Más</Link>
+                <a href="#nosotros">Conocer Más</a>
               </Button>
             </CardContent>
           </Card>

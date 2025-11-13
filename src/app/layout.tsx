@@ -10,6 +10,7 @@ import { WhatsAppButton } from '@/components/layout/whatsapp-button'
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
 })
 
 const geistMono = Geist_Mono({

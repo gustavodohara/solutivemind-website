@@ -177,4 +177,23 @@ section[id] {
   scroll-margin-top: 80px;
 }
 
+/* Typography utilities for lighter weights */
+.font-light {
+  font-weight: 300;
+}
+
+/* Responsive typography using clamp for fluid scaling */
+.text-fluid-5xl {
+  font-size: clamp(3rem, 2.26rem + 3.05vw, 5rem);
+}
+
+.text-fluid-4xl {
+  font-size: clamp(2rem, 1.63rem + 1.52vw, 3rem);
+}
+
+/* Text balance for better line breaking in headings */
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
 /* Force refresh - Updated colors: #0F4C75, #00B7C2, #1B262C, #F4F9FA, #B5FF4A */

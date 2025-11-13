@@ -5,15 +5,11 @@ import { useState } from 'react'
 import { Menu } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { ThemeToggleSimple } from '@/components/ui/theme-toggle-simple'
-import { NAV_ITEMS } from '@/lib/constants/navigation'
 import { SCROLL_SECTIONS } from '@/lib/constants/scroll-navigation'
 import { MobileNav } from './mobile-nav'
-import { useActivePath } from '@/lib/hooks/use-active-path'
-import { cn } from '@/lib/utils'
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { isActive } = useActivePath()
 
   return (
     <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur">

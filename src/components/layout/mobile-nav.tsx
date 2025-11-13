@@ -1,8 +1,6 @@
 'use client'
 
-import Link from 'next/link'
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet'
-import { NAV_ITEMS } from '@/lib/constants/navigation'
 import { SCROLL_SECTIONS } from '@/lib/constants/scroll-navigation'
 
 interface MobileNavProps {

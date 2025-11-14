@@ -28,13 +28,9 @@ export function Hero({ title, description, actions, className }: HeroProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
           >
-            {typeof title === 'string' ? (
-              <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
-                {title}
-              </h1>
-            ) : (
-              title
-            )}
+            <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
+              {title}
+            </h1>
           </motion.div>
 
           {/* Description with slight delay */}

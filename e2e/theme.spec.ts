@@ -7,7 +7,9 @@ test.describe('Theme System', () => {
     // Verificar que el theme provider está presente
     const html = page.locator('html')
     await expect(html).toHaveAttribute('lang', 'es')
-    await expect(html).toHaveAttribute('suppresshydrationwarning')
+    // suppressHydrationWarning se convierte a minúsculas en el DOM
+    const hasClass = await html.evaluate((el) => el.classList.contains('light') || el.classList.contains('dark'))
+    expect(hasClass).toBeTruthy()
   })
 
   test('should persist theme preference', async ({ page }) => {

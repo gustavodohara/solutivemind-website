@@ -1,11 +1,49 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
-import { Zap, Shield, TrendingUp, Clock, Users, Sparkles } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import Image from 'next/image'
+import dynamic from 'next/dynamic'
 import { Hero } from '@/components/layout/hero'
-import { FeaturesSection } from '@/components/layout/features-section'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
+import { SectionHeader } from '@/components/layout/section-header'
+import { CTAButtonPair } from '@/components/ui/cta-button-pair'
+import { PARTNERS } from '@/lib/data/partners'
+import { FEATURE_DEMOS } from '@/lib/data/feature-demos'
+import { PRODUCT_PILLARS } from '@/lib/data/product-pillars'
+import { INTEGRATIONS } from '@/lib/data/integrations'
+
+// Lazy load heavy components for better performance
+const LogoCarousel = dynamic(
+  () => import('@/components/showcase/logo-carousel').then((mod) => ({ default: mod.LogoCarousel })),
+  {
+    loading: () => <div className="text-center py-12">Cargando...</div>,
+  }
+)
+
+const TabbedCarousel = dynamic(
+  () => import('@/components/features/tabbed-carousel').then((mod) => ({ default: mod.TabbedCarousel })),
+  {
+    loading: () => <div className="text-center py-12">Cargando...</div>,
+  }
+)
+
+const StoryboardSection = dynamic(
+  () => import('@/components/layout/storyboard-section').then((mod) => ({ default: mod.StoryboardSection })),
+  {
+    loading: () => <div className="text-center py-12">Cargando...</div>,
+  }
+)
+
+const IntegrationGrid = dynamic(
+  () => import('@/components/showcase/integration-grid').then((mod) => ({ default: mod.IntegrationGrid })),
+  {
+    loading: () => <div className="text-center py-12">Cargando...</div>,
+  }
+)
+
+const EnterpriseCTACard = dynamic(
+  () => import('@/components/cta/enterprise-cta-card').then((mod) => ({ default: mod.EnterpriseCTACard })),
+  {
+    loading: () => <div className="text-center py-12">Cargando...</div>,
+  }
+)
 
 export const metadata: Metadata = {
   title: 'SolutiveMind - Servicios de Automatización Empresarial',
@@ -19,116 +57,111 @@ export const metadata: Metadata = {
   ],
 }
 
-const features = [
-  {
-    icon: Zap,
-    title: '⚙️ Automatización Inteligente',
-    description:
-      'Eliminamos tareas repetitivas para que tu equipo pueda enfocarse en la estrategia y el crecimiento.',
-  },
-  {
-    icon: TrendingUp,
-    title: '🔍 Optimización de Procesos',
-    description:
-      'Analizamos, simplificamos y potenciamos tus flujos de trabajo para lograr resultados medibles.',
-  },
-  {
-    icon: Shield,
-    title: '🔒 Soluciones Confiables',
-    description:
-      'Tecnología robusta y segura, con resultados probados y soporte experto en cada paso.',
-  },
-  {
-    icon: Clock,
-    title: '⏱️ Ahorro de Tiempo',
-    description: 'Automatizá hasta el 80 % de tus tareas rutinarias y liberá recursos para innovar.',
-  },
-  {
-    icon: Users,
-    title: '🤝 Soporte Continuo',
-    description: 'Te acompañamos antes, durante y después de la implementación.',
-  },
-  {
-    icon: Sparkles,
-    title: '🚀 Innovación Constante',
-    description: 'Actualizamos nuestras soluciones con las últimas tecnologías en IA y automatización.',
-  },
-]
-
 export default function HomePage() {
+  // Convert FEATURE_DEMOS to TabbedCarousel format
+  const tabbedFeatures = FEATURE_DEMOS.map((demo) => ({
+    id: demo.id,
+    title: demo.title,
+    description: demo.description,
+    content: (
+      <div className="relative aspect-video w-full overflow-hidden rounded-lg border-2">
+        <Image src={demo.image} alt={demo.title} fill className="object-cover" />
+      </div>
+    ),
+  }))
+
   return (
-    <div>
-      {/* Hero Section */}
+    <>
+      {/* 1. Hero con video background */}
       <Hero
-        title={
-          <>
-            🧠 Transforma tu negocio con{' '}
-            <span className="text-primary">automatización inteligente</span>
-          </>
-        }
-        description={
-          <>
-            Impulsá tu empresa con soluciones basadas en IA que optimizan procesos, reducen costos y
-            aumentan la productividad.
-            <br />
-            <br />
-            🔹 Menos tareas manuales.
-            <br />
-            🔹 Más enfoque en lo que realmente importa.
-            <br />
-            <br />
-            👉 Descubrí cómo →{' '}
-            <Link href="/servicios" className="text-primary underline hover:text-primary/80">
-              Ver Servicios
-            </Link>
-          </>
-        }
+        title="Automatización Empresarial para tu PyME"
+        description="Transformamos procesos manuales en sistemas automatizados que ahorran tiempo y reducen errores."
+        backgroundVideo="dQw4w9WgXcQ"
         actions={
-          <>
-            <Button size="lg" asChild>
-              <Link href="/servicios">Ver Servicios</Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <Link href="/contacto">Contactar</Link>
-            </Button>
-          </>
+          <CTAButtonPair
+            primaryText="Solicitar Consulta"
+            primaryHref="/contacto"
+            secondaryText="Ver Servicios"
+            secondaryHref="/servicios"
+            size="xl"
+          />
         }
       />
 
-      {/* Features Section */}
-      <FeaturesSection
-        title="💼 ¿Por qué elegir SolutiveMind?"
-        description="Soluciones completas de automatización diseñadas para llevar tu negocio al siguiente nivel."
-        features={features}
-      />
-
-      {/* CTA Section */}
-      <section className="bg-muted/50 border-t py-16 md:py-24">
-        <div className="w-full px-4 sm:px-6 lg:px-8">
-          <Card className="mx-auto max-w-3xl border-2">
-            <CardHeader className="text-center">
-              <Badge className="mx-auto mb-4 w-fit">Comenzá Hoy</Badge>
-              <CardTitle className="text-3xl sm:text-4xl">
-                🚀 Empezá hoy tu transformación digital
-              </CardTitle>
-              <CardDescription className="mt-4 text-lg">
-                Cada proceso optimizado es un paso hacia un negocio más rentable.
-                <br />
-                💬 Agenda una consulta gratuita y descubrí cómo la automatización puede cambiar tu
-                forma de trabajar.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="flex flex-col justify-center gap-4 sm:flex-row">
-              <Button size="lg" asChild>
-                <Link href="/contacto">Solicitar Consulta</Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/nosotros">Conocer Más</Link>
-              </Button>
-            </CardContent>
-          </Card>
+      {/* 2. Partner logos carousel */}
+      <section className="border-b py-12">
+        <div className="container">
+          <p className="text-muted-foreground mb-6 text-center text-sm">
+            Tecnologías y herramientas que utilizamos
+          </p>
+          <LogoCarousel logos={PARTNERS} autoplay speed={3000} />
         </div>
       </section>
-    </div>
+
+      {/* 3. Interactive feature tabs */}
+      <section className="py-24">
+        <div className="container">
+          <SectionHeader
+            title="¿Qué podemos automatizar para vos?"
+            description="Desde la gestión de documentos hasta la integración de sistemas"
+            alignment="center"
+            badge="Servicios"
+          />
+          <div className="mt-12">
+            <TabbedCarousel features={tabbedFeatures} />
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Product pillars (Storyboard sections) */}
+      {PRODUCT_PILLARS.map((pillar) => (
+        <StoryboardSection
+          key={pillar.id}
+          title={pillar.title}
+          description={pillar.description}
+          backgroundImage={pillar.backgroundImage}
+          actions={
+            <CTAButtonPair
+              primaryText={pillar.cta.text}
+              primaryHref={pillar.cta.link}
+              secondaryText="Contactar"
+              secondaryHref="/contacto"
+            />
+          }
+        />
+      ))}
+
+      {/* 5. Integration showcase */}
+      <section className="bg-muted/50 py-24">
+        <div className="container">
+          <SectionHeader
+            title="Integraciones que potencian tu negocio"
+            description="Conectamos tus herramientas favoritas"
+            alignment="center"
+          />
+          <div className="mt-12">
+            <IntegrationGrid integrations={INTEGRATIONS} columns={4} />
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Enterprise CTA */}
+      <section className="py-24">
+        <div className="container">
+          <EnterpriseCTACard
+            title="¿Listo para empezar?"
+            description="Agenda una consulta gratuita y descubrí cómo la automatización puede transformar tu negocio."
+            features={[
+              'Consulta inicial sin cargo',
+              'Análisis de procesos actuales',
+              'Propuesta personalizada',
+              'Soporte continuo',
+            ]}
+            ctaText="Solicitar Consulta"
+            ctaLink="/contacto"
+          />
+        </div>
+      </section>
+    </>
   )
 }

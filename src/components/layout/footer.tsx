@@ -13,7 +13,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">SolutiveMind</h3>
             <p className="text-muted-foreground text-sm">
-              Servicios automatizados para impulsar tu negocio con tecnología de vanguardia.
+              Servicios de Automatización Empresarial para PyMEs en Argentina
             </p>
           </div>
 
@@ -36,9 +36,9 @@ export function Footer() {
           {/* Contact Info */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Contacto</h3>
-            <div className="text-muted-foreground flex flex-col space-y-2 text-sm">
+            <div className="text-muted-foreground flex flex-col space-y-3 text-sm">
               <div className="flex items-center space-x-2">
-                <Mail className="h-4 w-4" />
+                <Mail className="h-4 w-4 flex-shrink-0" />
                 <a
                   href={`mailto:${CONTACT_INFO.email}`}
                   className="hover:text-primary transition-colors"
@@ -47,7 +47,7 @@ export function Footer() {
                 </a>
               </div>
               <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4" />
+                <Phone className="h-4 w-4 flex-shrink-0" />
                 <a
                   href={`tel:${CONTACT_INFO.phone}`}
                   className="hover:text-primary transition-colors"
@@ -56,7 +56,7 @@ export function Footer() {
                 </a>
               </div>
               <div className="flex items-center space-x-2">
-                <MapPin className="h-4 w-4" />
+                <MapPin className="h-4 w-4 flex-shrink-0" />
                 <span>{CONTACT_INFO.address}</span>
               </div>
             </div>

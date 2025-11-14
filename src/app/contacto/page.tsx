@@ -1,120 +1,87 @@
 import { Metadata } from 'next'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Hero } from '@/components/layout/hero'
 import { ContactForm } from '@/components/forms/contact-form'
+import { Mail, Phone, MapPin } from 'lucide-react'
 import { CONTACT_INFO } from '@/lib/constants/navigation'
 
 export const metadata: Metadata = {
-  title: 'Contacto - SolutiveMind',
-  description:
-    '¿Tenés preguntas o querés saber cómo la automatización puede transformar tu negocio? En SolutiveMind estamos para ayudarte.',
+  title: 'Contacto | SolutiveMind',
+  description: 'Contactá con SolutiveMind para una consulta gratuita',
 }
 
 export default function ContactoPage() {
   return (
-    <div className="w-full px-4 py-10 sm:px-6 lg:px-8">
-      <div className="space-y-10">
-        {/* Header */}
-        <div className="space-y-4 text-center">
-          <h1 className="text-4xl font-bold tracking-tight">💬 Contáctanos</h1>
-          <p className="text-muted-foreground text-lg">
-            ¿Tenés preguntas o querés saber cómo la automatización puede transformar tu negocio?
-            <br />
-            En SolutiveMind estamos para ayudarte.
-            <br />
-            💡 Escribinos y te responderemos en menos de 24 h.
-          </p>
-        </div>
+    <>
+      {/* Hero mejorado */}
+      <Hero
+        title="Hablemos de tu Proyecto"
+        description="Estamos listos para ayudarte a automatizar y optimizar tu negocio"
+        backgroundImage="/images/hero/contact-hero.jpg"
+      />
 
-        <div className="grid gap-8 lg:grid-cols-3">
-          {/* Contact Form */}
-          <div className="lg:col-span-2">
-            <Card>
-              <CardHeader>
-                <CardTitle>📩 Envíanos un mensaje</CardTitle>
-                <CardDescription>
-                  Completá el formulario y un especialista de nuestro equipo se pondrá en contacto
-                  con vos.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ContactForm />
-              </CardContent>
-            </Card>
-          </div>
+      <section className="py-16 md:py-24">
+        <div className="container">
+          <div className="mx-auto grid max-w-5xl gap-12 lg:grid-cols-2">
+            {/* Contact Info */}
+            <div className="space-y-8">
+              <div>
+                <h2 className="text-3xl font-bold tracking-tight">Información de Contacto</h2>
+                <p className="text-muted-foreground mt-4">
+                  Completá el formulario o contactanos directamente por estos medios.
+                </p>
+              </div>
 
-          {/* Contact Info Sidebar */}
-          <div className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>📞 Otros medios de contacto</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <p className="text-muted-foreground text-sm">
-                    📧 Email:{' '}
+              <div className="space-y-4">
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 rounded-lg p-3">
+                    <Mail className="text-primary h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold">Email</h3>
                     <a
                       href={`mailto:${CONTACT_INFO.email}`}
-                      className="text-primary hover:underline"
+                      className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       {CONTACT_INFO.email}
                     </a>
-                  </p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-muted-foreground text-sm">
-                    📱 Teléfono:{' '}
+
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 rounded-lg p-3">
+                    <Phone className="text-primary h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold">Teléfono</h3>
                     <a
                       href={`tel:${CONTACT_INFO.phone}`}
-                      className="text-primary hover:underline"
+                      className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       {CONTACT_INFO.phone}
                     </a>
-                  </p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-muted-foreground text-sm">
-                    💬 WhatsApp:{' '}
-                    <a
-                      href={`https://wa.me/${CONTACT_INFO.whatsapp}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline"
-                    >
-                      Enviar mensaje
-                    </a>
-                  </p>
-                </div>
-                <div>
-                  <p className="text-muted-foreground text-sm">
-                    📍 Ubicación: {CONTACT_INFO.address}
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
 
-        {/* CTA Section */}
-        <div className="bg-muted/50 border-t py-16 md:py-24">
-          <div className="w-full px-4 sm:px-6 lg:px-8">
-            <Card className="mx-auto max-w-3xl border-2">
-              <CardHeader className="text-center">
-                <CardTitle className="text-3xl sm:text-4xl">
-                  🤝 Hablemos de tu próximo paso
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <CardDescription className="mt-4 text-lg">
-                  Cada conversación puede ser el comienzo de una gran mejora.
-                  <br />
-                  Contáctanos hoy y descubrí cómo hacer crecer tu negocio con automatización
-                  inteligente.
-                </CardDescription>
-              </CardContent>
-            </Card>
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 rounded-lg p-3">
+                    <MapPin className="text-primary h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold">Ubicación</h3>
+                    <p className="text-muted-foreground">{CONTACT_INFO.address}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Form (mantener actual) */}
+            <div className="bg-card rounded-lg border-2 p-8">
+              <h2 className="mb-6 text-2xl font-bold">Envianos tu Consulta</h2>
+              <ContactForm />
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   )
 }

@@ -1,131 +1,100 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { Hero } from '@/components/layout/hero'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { StoryboardSection } from '@/components/layout/storyboard-section'
+import { SectionHeader } from '@/components/layout/section-header'
+import { CTAButtonPair } from '@/components/ui/cta-button-pair'
+import { FeatureIconBox } from '@/components/features/feature-icon-box'
+import { Target, Users, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Sobre Nosotros - SolutiveMind',
-  description:
-    'Impulsamos la transformación digital de las empresas a través de automatización inteligente y soluciones basadas en IA.',
+  title: 'Sobre Nosotros | SolutiveMind',
+  description: 'Conocé más sobre SolutiveMind y nuestro equipo',
 }
 
 export default function NosotrosPage() {
+  const valores = [
+    {
+      icon: Target,
+      title: 'Enfoque en Resultados',
+      description: 'Nos enfocamos en entregar soluciones que generen impacto real en tu negocio.',
+    },
+    {
+      icon: Users,
+      title: 'Atención Personalizada',
+      description: 'Cada cliente es único y merece una solución a su medida.',
+    },
+    {
+      icon: Zap,
+      title: 'Implementación Ágil',
+      description:
+        'Desarrollamos e implementamos soluciones rápidamente sin comprometer la calidad.',
+    },
+  ]
+
   return (
-    <div>
-      {/* Hero */}
+    <>
+      {/* Hero mejorado */}
       <Hero
-        title="🧠 Sobre SolutiveMind"
-        description={
-          <>
-            Impulsamos la transformación digital de las empresas a través de automatización
-            inteligente y soluciones basadas en IA.
-            <br />
-            Ayudamos a que las organizaciones trabajen mejor, más rápido y con mayor enfoque.
-          </>
-        }
-        className="py-16 md:py-20"
+        title="Sobre SolutiveMind"
+        description="Ayudamos a PyMEs a crecer mediante la automatización inteligente de procesos"
+        backgroundImage="/images/hero/about-hero.jpg"
       />
 
-      {/* Main Content */}
-      <section className="border-t py-16">
-        <div className="w-full px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl space-y-12">
-            {/* Who We Are */}
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tight">💡 Quiénes somos</h2>
-              <div className="prose prose-slate dark:prose-invert max-w-none">
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  En SolutiveMind, creemos que la tecnología tiene que adaptarse a las personas, no
-                  al revés.
-                  <br />
-                  Nos especializamos en automatizar procesos empresariales para que tu equipo gane
-                  tiempo, claridad y eficiencia.
-                </p>
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  Analizamos tus operaciones, diseñamos soluciones a medida y te acompañamos en cada
-                  paso del proceso para asegurar resultados reales y sostenibles.
-                </p>
-              </div>
-            </div>
-
-            {/* Mission, Vision, Values */}
-            <div className="space-y-8">
-              <Card>
-                <CardHeader>
-                  <CardTitle>🎯 Misión</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Transformar empresas mediante la automatización inteligente, generando valor
-                    tangible, eficiencia y crecimiento sostenible.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>🌍 Visión</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Ser referentes en soluciones de automatización y transformación digital,
-                    ayudando a las empresas a evolucionar hacia el futuro con confianza y agilidad.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>💎 Nuestros valores</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="text-muted-foreground space-y-2">
-                    <li>🚀 Innovación: siempre un paso adelante.</li>
-                    <li>🧩 Excelencia: buscamos resultados medibles y duraderos.</li>
-                    <li>🤝 Compromiso: tu éxito es el nuestro.</li>
-                    <li>💬 Transparencia: claridad y confianza en cada proyecto.</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* What We Do */}
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tight">⚙️ Qué hacemos</h2>
-              <div className="prose prose-slate dark:prose-invert max-w-none">
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  Ofrecemos soluciones completas para cada etapa de tu transformación digital:
-                </p>
-                <ul className="text-muted-foreground space-y-2 text-lg">
-                  <li>Análisis y diagnóstico de procesos.</li>
-                  <li>Diseño de soluciones de automatización personalizadas.</li>
-                  <li>Implementación con tecnologías de vanguardia.</li>
-                  <li>Integración con tus sistemas actuales.</li>
-                  <li>Capacitación y acompañamiento continuo.</li>
-                  <li>Soporte y optimización permanente.</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* CTA */}
-            <div className="bg-muted/50 space-y-4 rounded-lg border-2 p-8 text-center">
-              <h3 className="text-2xl font-bold">🚀 ¿Listo para dar el siguiente paso?</h3>
-              <p className="text-muted-foreground">
-                Descubrí cómo la automatización puede transformar tu forma de trabajar.
-              </p>
-              <div className="flex flex-col justify-center gap-4 sm:flex-row">
-                <Button size="lg" asChild>
-                  <Link href="/servicios">Ver Servicios</Link>
-                </Button>
-                <Button size="lg" variant="outline" asChild>
-                  <Link href="/contacto">💬 Contactar</Link>
-                </Button>
-              </div>
-            </div>
+      {/* Valores */}
+      <section className="py-16 md:py-24">
+        <div className="container">
+          <SectionHeader
+            title="Nuestros Valores"
+            description="Los principios que guían nuestro trabajo"
+            alignment="center"
+          />
+          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {valores.map((valor, index) => (
+              <FeatureIconBox
+                key={index}
+                icon={valor.icon}
+                title={valor.title}
+                description={valor.description}
+                variant="bordered"
+              />
+            ))}
           </div>
         </div>
       </section>
-    </div>
+
+      {/* Storyboard Section */}
+      <StoryboardSection
+        title="Nuestra Misión"
+        description="Democratizar la automatización empresarial para que todas las PyMEs puedan competir en igualdad de condiciones con grandes empresas."
+        backgroundImage="/images/pillars/mission-bg.jpg"
+        actions={
+          <CTAButtonPair
+            primaryText="Ver Servicios"
+            primaryHref="/servicios"
+            secondaryText="Contactar"
+            secondaryHref="/contacto"
+          />
+        }
+      />
+
+      {/* CTA final */}
+      <section className="py-16 md:py-24">
+        <div className="container">
+          <div className="bg-muted/50 space-y-6 rounded-lg border-2 p-8 text-center">
+            <h3 className="text-2xl font-bold">¿Listo para dar el siguiente paso?</h3>
+            <p className="text-muted-foreground">
+              Descubrí cómo la automatización puede transformar tu forma de trabajar.
+            </p>
+            <CTAButtonPair
+              primaryText="Ver Servicios"
+              primaryHref="/servicios"
+              secondaryText="Contactar"
+              secondaryHref="/contacto"
+              size="lg"
+            />
+          </div>
+        </div>
+      </section>
+    </>
   )
 }

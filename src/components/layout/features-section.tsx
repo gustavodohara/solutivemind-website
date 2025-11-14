@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import { motion } from 'framer-motion'
 import {
   Zap,
@@ -11,6 +12,11 @@ import {
   LucideIcon
 } from 'lucide-react'
 import { Card } from '@/components/ui/card'
+
+// Verify motion.div is available
+if (!motion || !motion.div) {
+  console.error('framer-motion motion.div is not available. Check your framer-motion installation.')
+}
 
 // Icon mapping
 const iconMap: Record<string, LucideIcon> = {
@@ -56,13 +62,18 @@ export function FeaturesSection({ title, description, features }: FeaturesSectio
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
           {features.map((feature, index) => {
             const Icon = iconMap[feature.iconName]
+            const MotionWrapper = (motion && typeof motion.div !== 'undefined') ? motion.div : 'div'
+            const motionProps = (motion && typeof motion.div !== 'undefined') ? {
+              initial: { opacity: 0, y: 20 },
+              whileInView: { opacity: 1, y: 0 },
+              viewport: { once: true, margin: "-100px" },
+              transition: { duration: 0.5, delay: index * 0.1 }
+            } : {}
+            
             return (
-              <motion.div
+              <MotionWrapper
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                {...motionProps}
               >
                 <Card className="h-full p-8 md:p-10 rounded-2xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] border-border/50">
                   {/* Large icon */}
@@ -78,7 +89,7 @@ export function FeaturesSection({ title, description, features }: FeaturesSectio
                     {feature.description}
                   </p>
                 </Card>
-              </motion.div>
+              </MotionWrapper>
             )
           })}
         </div>

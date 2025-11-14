@@ -73,7 +73,7 @@ export function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
         {/* Name Field */}
         <FormField
           control={form.control}
@@ -162,8 +162,8 @@ export function ContactForm() {
               <FormLabel>Cuéntanos cómo podemos ayudarte…</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="✍️ Hasta 1000 caracteres"
-                  className="min-h-[120px] resize-none"
+                  placeholder="Cuéntanos cómo podemos ayudarte"
+                  className="min-h-[200px] resize-none"
                   {...field}
                 />
               </FormControl>
@@ -174,7 +174,12 @@ export function ContactForm() {
         />
 
         {/* Submit Button */}
-        <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+        <Button
+          type="submit"
+          size="lg"
+          className="w-full text-lg px-8 py-6 h-14 rounded-xl"
+          disabled={isSubmitting}
+        >
           {isSubmitting ? (
             <>
               <Loader2 className="mr-2 h-5 w-5 animate-spin" />

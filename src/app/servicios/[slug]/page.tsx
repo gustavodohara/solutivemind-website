@@ -7,9 +7,9 @@ import { ProductDetail } from '@/components/products/product-detail'
 import { Button } from '@/components/ui/button'
 
 interface ProductPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 // Generate static params for all products
@@ -22,7 +22,8 @@ export async function generateStaticParams() {
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
-  const product = getProductBySlug(params.slug)
+  const { slug } = await params
+  const product = getProductBySlug(slug)
 
   if (!product) {
     return {
@@ -41,8 +42,9 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   }
 }
 
-export default function ProductPage({ params }: ProductPageProps) {
-  const product = getProductBySlug(params.slug)
+export default async function ProductPage({ params }: ProductPageProps) {
+  const { slug } = await params
+  const product = getProductBySlug(slug)
 
   if (!product) {
     notFound()

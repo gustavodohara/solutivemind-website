@@ -70,7 +70,9 @@ export default function HomePage() {
             ¿Te imaginás que tu negocio trabaje solo mientras vos te enfocás en crecer?
             <br />
             <br />
-            Dejá de perder tiempo en tareas repetitivas. Automatizamos procesos para que tu equipo gane claridad, tiempo y energía mental.
+            <span className="max-w-[90%] mx-auto block">
+              Dejá de perder tiempo en tareas repetitivas. Automatizamos procesos para que tu equipo gane claridad, tiempo y energía mental.
+            </span>
             <br />
             <br />
             <strong>Sin tecnicismos. Sin complicaciones. Solo resultados.</strong>

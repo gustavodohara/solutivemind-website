@@ -9,6 +9,9 @@ import {
   Clock,
   Users,
   Sparkles,
+  MessageCircle,
+  Brain,
+  Unlock,
   LucideIcon
 } from 'lucide-react'
 import { Card } from '@/components/ui/card'
@@ -26,6 +29,9 @@ const iconMap: Record<string, LucideIcon> = {
   'clock': Clock,
   'users': Users,
   'sparkles': Sparkles,
+  'message-circle': MessageCircle,
+  'brain': Brain,
+  'unlock': Unlock,
 }
 
 interface Feature {
@@ -79,7 +85,7 @@ export function FeaturesSection({ title, description, features }: FeaturesSectio
                   {/* Large icon */}
                   <div className="mb-6">
                     <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
-                      {Icon && <Icon className="text-primary h-7 w-7" />}
+                      {Icon ? <Icon className="text-primary h-7 w-7" /> : null}
                     </div>
                   </div>
 

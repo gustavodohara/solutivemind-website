@@ -1,0 +1,21 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0f172a"/>
+
+  <!-- Simple brain outline -->
+  <path d="M 350 280 Q 350 220 400 220 Q 450 220 450 280 Q 455 300 450 320 Q 450 360 400 360 Q 350 360 350 320 Q 345 300 350 280 Z"
+        fill="none" stroke="#06b6d4" stroke-width="4"/>
+
+  <!-- Neural nodes inside -->
+  <circle cx="375" cy="270" r="8" fill="#06b6d4"/>
+  <circle cx="400" cy="290" r="8" fill="#06b6d4"/>
+  <circle cx="425" cy="270" r="8" fill="#06b6d4"/>
+  <circle cx="385" cy="320" r="8" fill="#06b6d4"/>
+  <circle cx="415" cy="320" r="8" fill="#06b6d4"/>
+
+  <!-- Simple connections -->
+  <line x1="375" y1="270" x2="400" y2="290" stroke="#06b6d4" stroke-width="2" opacity="0.6"/>
+  <line x1="400" y1="290" x2="425" y2="270" stroke="#06b6d4" stroke-width="2" opacity="0.6"/>
+  <line x1="400" y1="290" x2="385" y2="320" stroke="#06b6d4" stroke-width="2" opacity="0.6"/>
+  <line x1="400" y1="290" x2="415" y2="320" stroke="#06b6d4" stroke-width="2" opacity="0.6"/>
+</svg>

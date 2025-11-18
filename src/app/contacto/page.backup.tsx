@@ -50,7 +50,7 @@ export default function ContactoPage() {
                 <CardTitle>Otros medios de contacto</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div>
+                {/* <div>
                   <p className="text-muted-foreground text-sm">
                     Email:{' '}
                     <a
@@ -60,7 +60,7 @@ export default function ContactoPage() {
                       {CONTACT_INFO.email}
                     </a>
                   </p>
-                </div>
+                </div> */}
                 <div>
                   <p className="text-muted-foreground text-sm">
                     Teléfono:{' '}

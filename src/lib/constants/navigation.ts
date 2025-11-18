@@ -23,7 +23,7 @@ export const CONTACT_INFO = {
   email: 'contacto@solutivemind.com',
   phone: '+54 9 11 2409 0216',
   whatsapp: '5491124090216', // Número sin espacios ni guiones
-  whatsappMessage: '¡Hola! Me interesa obtener más información sobre sus servicios.',
+  whatsappMessage: '¡Hola! Quiero saber cómo puedo automatizar mi negocio.',
   address: 'Buenos Aires, Argentina',
   social: {
     linkedin: 'https://linkedin.com/company/solutivemind',

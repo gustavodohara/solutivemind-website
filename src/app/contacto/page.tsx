@@ -15,13 +15,15 @@ export default function ContactoPage() {
       <div className="space-y-10">
         {/* Header */}
         <div className="space-y-4 text-center">
-          <h1 className="text-4xl font-bold tracking-tight">Contáctanos</h1>
+          <h1 className="text-4xl font-bold tracking-tight">Hablemos de tu negocio</h1>
           <p className="text-muted-foreground text-lg">
-            ¿Tenés preguntas o querés saber cómo la automatización puede transformar tu negocio?
+            ¿Tenés dudas? ¿Querés saber si podés automatizar algo específico? ¿Necesitás un diagnóstico sin compromiso?
             <br />
-            En SolutiveMind estamos para ayudarte.
             <br />
-            Escribinos y te responderemos en menos de 24 h.
+            Escribinos y te respondemos en menos de 24 horas.
+            <br />
+            <br />
+            <strong>Sin tecnicismos. Sin vueltas. Solo soluciones claras.</strong>
           </p>
         </div>
 
@@ -30,10 +32,9 @@ export default function ContactoPage() {
           <div className="lg:col-span-2">
             <Card>
               <CardHeader>
-                <CardTitle>Envíanos un mensaje</CardTitle>
+                <CardTitle>Contanos qué necesitás</CardTitle>
                 <CardDescription>
-                  Completá el formulario y un especialista de nuestro equipo se pondrá en contacto
-                  con vos.
+                  Completá el formulario y charlamos. Te mostramos cómo podés automatizar tu negocio sin complicarte.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -100,15 +101,15 @@ export default function ContactoPage() {
             <Card className="mx-auto max-w-3xl border-2">
               <CardHeader className="text-center">
                 <CardTitle className="text-3xl sm:text-4xl">
-                  Hablemos de tu próximo paso
+                  Cada conversación puede cambiar tu forma de trabajar
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
                 <CardDescription className="mt-4 text-lg">
-                  Cada conversación puede ser el comienzo de una gran mejora.
+                  No necesitás saberlo todo. Solo dar el primer paso.
                   <br />
-                  Contáctanos hoy y descubrí cómo hacer crecer tu negocio con automatización
-                  inteligente.
+                  <br />
+                  Escribinos hoy y descubrimos juntos cómo hacer que tu negocio trabaje solo mientras vos te enfocás en crecer.
                 </CardDescription>
               </CardContent>
             </Card>

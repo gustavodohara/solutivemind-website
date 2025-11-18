@@ -13,7 +13,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">SolutiveMind</h3>
             <p className="text-muted-foreground text-sm">
-              Servicios automatizados para impulsar tu negocio con tecnología de vanguardia.
+              Automatización accesible para que tu negocio trabaje solo. Sin tecnicismos, sin vueltas.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="text-muted-foreground mt-8 border-t pt-8 text-center text-sm">
-          <p>© {currentYear} SolutiveMind. Todos los derechos reservados.</p>
+          <p>© 2025 SolutiveMind. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

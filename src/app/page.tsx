@@ -20,37 +20,37 @@ export const metadata: Metadata = {
 
 const features = [
   {
+    iconName: 'message-circle' as const,
+    title: 'Lenguaje Claro, Sin Vueltas',
+    description:
+      'Te explicamos todo como si se lo contaras a un amigo. Nada de palabras raras ni tecnicismos que te confundan.',
+  },
+  {
+    iconName: 'brain' as const,
+    title: 'Alivio Mental Real',
+    description:
+      'No se trata solo de ahorrar tiempo. Es liberar tu cabeza de tareas repetitivas para que puedas pensar en grande.',
+  },
+  {
     iconName: 'zap' as const,
-    title: 'Automatización Inteligente',
-    description:
-      'Eliminamos tareas repetitivas para que tu equipo pueda enfocarse en la estrategia y el crecimiento.',
+    title: 'Implementación Rápida',
+    description: 'Sistemas listos en semanas, no meses. Para que veas resultados sin esperar eternamente.',
   },
   {
-    iconName: 'trending-up' as const,
-    title: 'Optimización de Procesos',
-    description:
-      'Analizamos, simplificamos y potenciamos tus flujos de trabajo para lograr resultados medibles.',
-  },
-  {
-    iconName: 'shield' as const,
-    title: 'Soluciones Confiables',
-    description:
-      'Tecnología robusta y segura, con resultados probados y soporte experto en cada paso.',
-  },
-  {
-    iconName: 'clock' as const,
-    title: 'Ahorro de Tiempo',
-    description: 'Automatizá hasta el 80 % de tus tareas rutinarias y liberá recursos para innovar.',
+    iconName: 'unlock' as const,
+    title: 'Sin Ataduras',
+    description: 'Empezá cuando quieras, crecé a tu ritmo. Sin contratos eternos ni compromisos que te aten.',
   },
   {
     iconName: 'users' as const,
-    title: 'Soporte Continuo',
-    description: 'Te acompañamos antes, durante y después de la implementación.',
+    title: 'Acompañamiento Personalizado',
+    description: 'Te escuchamos antes de programar. Y seguimos ahí después de entregar. Siempre.',
   },
   {
-    iconName: 'sparkles' as const,
-    title: 'Innovación Constante',
-    description: 'Actualizamos nuestras soluciones con las últimas tecnologías en IA y automatización.',
+    iconName: 'trending-up' as const,
+    title: 'Resultados Medibles',
+    description:
+      'Menos errores, más control, y procesos que funcionan mientras vos te ocupás de lo importante.',
   },
 ]
 
@@ -67,13 +67,13 @@ export default function HomePage() {
         }
         description={
           <>
-            Impulsá tu empresa con soluciones basadas en IA que optimizan procesos, reducen costos y
-            aumentan la productividad.
+            ¿Te imaginás que tu negocio trabaje solo mientras vos te enfocás en crecer?
             <br />
             <br />
-            Menos tareas manuales.
+            Dejá de perder tiempo en tareas repetitivas. Automatizamos procesos para que tu equipo gane claridad, tiempo y energía mental.
             <br />
-            Más enfoque en lo que realmente importa.
+            <br />
+            <strong>Sin tecnicismos. Sin complicaciones. Solo resultados.</strong>
             <br />
             <br />
             Descubrí cómo →{' '}
@@ -88,7 +88,7 @@ export default function HomePage() {
               <Link href="/servicios">Ver Servicios</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link href="/contacto">Contactar</Link>
+              <Link href="/contacto">Hablemos de tu caso</Link>
             </Button>
           </>
         }
@@ -97,7 +97,7 @@ export default function HomePage() {
       {/* Features Section */}
       <FeaturesSection
         title="¿Por qué elegir SolutiveMind?"
-        description="Soluciones completas de automatización diseñadas para llevar tu negocio al siguiente nivel."
+        description="Automatización accesible, rápida y comprensible. Te lo explicamos de forma simple y adaptado a lo que realmente necesitás."
         features={features}
       />
 
@@ -106,20 +106,23 @@ export default function HomePage() {
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <Card className="mx-auto max-w-3xl border-2">
             <CardHeader className="text-center">
-              <Badge className="mx-auto mb-4 w-fit">Comenzá Hoy</Badge>
+              <Badge className="mx-auto mb-4 w-fit">Diagnóstico Gratuito</Badge>
               <CardTitle className="text-3xl sm:text-4xl">
-                Empezá hoy tu transformación digital
+                ¿Listo para que tu negocio trabaje solo?
               </CardTitle>
               <CardDescription className="mt-4 text-lg">
-                Cada proceso optimizado es un paso hacia un negocio más rentable.
+                Cada tarea que automatizás es tiempo que ganás. Y tiempo es lo que necesitás para crecer sin saturarte.
                 <br />
-                Agenda una consulta gratuita y descubrí cómo la automatización puede cambiar tu
-                forma de trabajar.
+                <br />
+                Agendá un diagnóstico gratuito y te mostramos qué podés automatizar en tu negocio ahora mismo.
+                <br />
+                <br />
+                <strong>No necesitás ser técnico. Solo dar el primer paso.</strong>
               </CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col justify-center gap-4 sm:flex-row">
               <Button size="lg" asChild>
-                <Link href="/contacto">Solicitar Consulta</Link>
+                <Link href="/contacto">Agendá tu Diagnóstico</Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <Link href="/nosotros">Conocer Más</Link>

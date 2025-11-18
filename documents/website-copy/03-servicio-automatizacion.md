@@ -27,18 +27,22 @@ Disponible
 
 ## Descripción
 
-Transformá tus procesos con flujos de trabajo automatizados que ahorran tiempo, reducen errores y aumentan la eficiencia.
+**¿Te imaginás despertar y ver que tu negocio ya confirmó turnos, envió recordatorios y registró pagos?**
 
-Ideal para empresas que quieren escalar sin aumentar costos operativos.
+Así funciona la automatización. No es magia, es tecnología bien usada.
+
+Dejá de perseguir clientes que olvidan citas, de anotar todo manual y de preocuparte si se te pasó algo. Tus sistemas trabajan 24/7 para que vos no tengas que estar pendiente de todo.
+
+**Ideal para empresas que quieren escalar sin saturar a su equipo ni aumentar costos operativos.**
 
 ---
 
 ## Características Principales
 
-- Integración entre herramientas (CRM, ERP, sistemas internos)
-- Automatización de tareas repetitivas
-- Flujos inteligentes con IA para atención, ventas o soporte
-- Monitoreo y reportes automáticos
+- **Integración total**: Conectamos las herramientas que ya usás (CRM, ERP, WhatsApp, email) para que hablen entre sí
+- **Automatización real**: Agendas, recordatorios, cobros... todo funciona solo
+- **Atención inteligente 24/7**: Chatbots que responden como si fueras vos, incluso de madrugada
+- **Control en tiempo real**: Reportes y monitoreo automático para que siempre sepas qué está pasando
 
 ---
 

@@ -9,62 +9,66 @@
 ## Hero Section
 
 ### Título
-Sobre SolutiveMind
+Hacemos que la tecnología sea simple
 
 ### Descripción
-Impulsamos la transformación digital de las empresas a través de automatización inteligente y soluciones basadas en IA.
+En SolutiveMind creemos que la tecnología tiene que adaptarse a las personas, no al revés.
 
-Ayudamos a que las organizaciones trabajen mejor, más rápido y con mayor enfoque.
+Automatizamos procesos para que tu equipo gane tiempo, claridad y energía mental. Sin tecnicismos, sin estrés, sin depender de expertos.
+
+**Solo soluciones que funcionan.**
 
 ---
 
 ## Sección: Quiénes somos
 
-En SolutiveMind, creemos que la tecnología tiene que adaptarse a las personas, no al revés.
+Somos un equipo que cree que las personas talentosas deberían enfocarse en lo que realmente importa, no en tareas que la tecnología puede automatizar.
 
-Nos especializamos en automatizar procesos empresariales para que tu equipo gane tiempo, claridad y eficiencia.
+Creemos que automatizar no es "volverse técnico". Es hacer que tu negocio trabaje por vos.
 
-Analizamos tus operaciones, diseñamos soluciones a medida y te acompañamos en cada paso del proceso para asegurar resultados reales y sostenibles.
+Por eso diseñamos soluciones accesibles, rápidas y comprensibles. Te explicamos todo en lenguaje humano, sin palabras raras. Y te acompañamos en cada paso hasta que veas los resultados.
 
 ---
 
 ## Misión, Visión y Valores
 
-### Misión
-Transformar empresas mediante la automatización inteligente, generando valor tangible, eficiencia y crecimiento sostenible.
+### Propósito
+Acercar software de calidad a todo el mundo, simplificando los procesos tecnológicos y haciendo que las herramientas digitales sean comprensibles y útiles para cualquier persona.
 
 ### Visión
-Ser referentes en soluciones de automatización y transformación digital, ayudando a las empresas a evolucionar hacia el futuro con confianza y agilidad.
+Ser la opción más accesible y confiable en automatización de procesos para PyMEs y emprendedores.
 
 ### Nuestros valores
-- **Innovación**: siempre un paso adelante.
-- **Excelencia**: buscamos resultados medibles y duraderos.
-- **Compromiso**: tu éxito es el nuestro.
-- **Transparencia**: claridad y confianza en cada proyecto.
+- **Claridad y cercanía**: Te explicamos fácil, te escuchamos de verdad.
+- **Accesibilidad tecnológica**: Software de calidad sin presupuestos imposibles.
+- **Agilidad y compromiso**: Resultados rápidos y acompañamiento real.
+- **Educación y acompañamiento**: No te dejamos solo. Te enseñamos a usar lo que implementamos.
 
 ---
 
 ## Sección: Qué hacemos
 
-Ofrecemos soluciones completas para cada etapa de tu transformación digital:
+Te acompañamos en cada etapa para que tu negocio funcione mejor:
 
-- Análisis y diagnóstico de procesos.
-- Diseño de soluciones de automatización personalizadas.
-- Implementación con tecnologías de vanguardia.
-- Integración con tus sistemas actuales.
-- Capacitación y acompañamiento continuo.
-- Soporte y optimización permanente.
+- **Escuchamos primero**: Entendemos tu negocio y detectamos qué te está frenando
+- **Diseñamos a tu medida**: Soluciones personalizadas, no paquetes genéricos
+- **Implementamos rápido**: Sistemas funcionando en semanas, no meses
+- **Integramos todo**: Conectamos con las herramientas que ya usás
+- **Te enseñamos**: Capacitación paso a paso para que puedas usarlo sin miedo
+- **Seguimos al lado**: Soporte permanente para cuando lo necesites
 
 ---
 
 ## Call to Action (CTA)
 
 ### Título
-¿Listo para dar el siguiente paso?
+¿Listo para que tu negocio trabaje solo?
 
 ### Descripción
-Descubrí cómo la automatización puede transformar tu forma de trabajar.
+No necesitás ser técnico. Solo necesitás dar el primer paso.
+
+Descubrí cómo la automatización puede darte más tiempo, claridad y control.
 
 ### Botones
 - **Primario**: Ver Servicios
-- **Secundario**: Contactar
+- **Secundario**: Hablemos

@@ -27,7 +27,7 @@ Este documento contiene el contenido de los componentes que aparecen en todas o 
 
 **Título**: SolutiveMind
 
-**Descripción**: Servicios automatizados para impulsar tu negocio con tecnología de vanguardia.
+**Descripción**: Automatización accesible para que tu negocio trabaje solo. Sin tecnicismos, sin vueltas.
 
 ---
 
@@ -66,7 +66,7 @@ Este documento contiene el contenido de los componentes que aparecen en todas o 
 
 ## Botón de WhatsApp (Flotante)
 
-**Mensaje predefinido**: "¡Hola! Me interesa obtener más información sobre sus servicios."
+**Mensaje predefinido**: "¡Hola! Quiero saber cómo puedo automatizar mi negocio."
 
 **Número de WhatsApp**: 5491124090216
 

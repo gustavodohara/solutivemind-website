@@ -68,12 +68,14 @@ El sitio cuenta con las siguientes secciones principales:
 
 ## Propuesta de Valor Principal
 
-**SolutiveMind** transforma negocios con automatización inteligente basada en IA que:
-- Optimiza procesos
-- Reduce costos
-- Aumenta la productividad
-- Elimina tareas repetitivas
-- Libera tiempo para enfocarse en estrategia
+**"Automatizá tu negocio sin volverte técnico"**
+
+**SolutiveMind** hace que tu negocio trabaje solo mientras vos te enfocás en crecer:
+- **Alivio mental real**: No solo ahorrar tiempo, sino liberar tu cabeza de tareas repetitivas
+- **Lenguaje claro**: Sin tecnicismos, sin palabras raras, explicado como si fuera para un amigo
+- **Implementación rápida**: Resultados en semanas, no meses
+- **Precio accesible**: Tecnología de calidad para PyMEs, sin presupuestos imposibles
+- **Acompañamiento personalizado**: Escuchamos antes de programar, acompañamos después de entregar
 
 ---
 
@@ -96,13 +98,28 @@ El sitio cuenta con las siguientes secciones principales:
 ## Tono y Estilo del Contenido
 
 - **Idioma**: Español (Argentina) - uso de "vos"
-- **Tono**: Profesional pero cercano
-- **Enfoque**: Beneficios concretos y resultados medibles
-- **Estilo**: Claro, directo, orientado a la acción
+- **Tono**: Profesional, accesible y empático
+- **Voz de marca**: Como contarle a un amigo - claro, simple, humano
+- **Enfoque**: Alivio mental y resultados reales (no solo "ahorro de tiempo")
+- **Estilo**: Sin tecnicismos, sin jerga técnica, explicaciones breves y visuales
 - **Emojis**: Uso moderado para puntos clave (⚙️, 📧, 📞, 📍)
+- **Palabras clave**: claro, simple, ágil, humano, accesible, sin vueltas
+
+## Mejoras Aplicadas (Última Actualización)
+
+✅ **Copy más conversacional y humano**: Eliminación de tecnicismos y lenguaje corporativo
+✅ **Enfoque en beneficios emocionales**: Alivio mental, no solo ahorro de tiempo
+✅ **Propuesta de valor clara**: "Automatizá tu negocio sin volverte técnico"
+✅ **Llamados a la acción más directos**: "Diagnóstico gratuito" en lugar de "Consulta"
+✅ **Testimonios implícitos**: Casos reales mencionados en el copy
+✅ **Reducción de barreras**: Énfasis en "no necesitás ser técnico"
+✅ **Precio como ventaja**: Destacar accesibilidad económica
+✅ **Valores alineados con el brief**: Claridad, cercanía, accesibilidad, acompañamiento
 
 ---
 
 ## Última Actualización
 
-Fecha: 2025-01-17
+**Fecha**: 2025-01-17
+**Tipo**: Mejora integral del copy basado en brief de marca y calendario de contenidos
+**Cambios principales**: Tono más humano, eliminación de tecnicismos, enfoque en alivio mental y accesibilidad

@@ -13,58 +13,61 @@
 Transforma tu negocio con **automatización inteligente**
 
 ### Descripción
-Impulsá tu empresa con soluciones basadas en IA que optimizan procesos, reducen costos y aumentan la productividad.
+¿Te imaginás que tu negocio trabaje solo mientras vos te enfocás en crecer?
 
-Menos tareas manuales.
-Más enfoque en lo que realmente importa.
+Dejá de perder tiempo en tareas repetitivas. Automatizamos procesos para que tu equipo gane claridad, tiempo y energía mental.
+
+**Sin tecnicismos. Sin complicaciones. Solo resultados.**
 
 Descubrí cómo → [Ver Servicios](/servicios)
 
 ### Botones de Acción
 - **Primario**: Ver Servicios
-- **Secundario**: Contactar
+- **Secundario**: Hablemos de tu caso
 
 ---
 
 ## Sección: ¿Por qué elegir SolutiveMind?
 
-**Subtítulo**: Soluciones completas de automatización diseñadas para llevar tu negocio al siguiente nivel.
+**Subtítulo**: Automatización accesible, rápida y comprensible. Te lo explicamos de forma simple y adaptado a lo que realmente necesitás.
 
 ### Características
 
-#### 1. Automatización Inteligente
-Eliminamos tareas repetitivas para que tu equipo pueda enfocarse en la estrategia y el crecimiento.
+#### 1. Lenguaje Claro, Sin Vueltas
+Te explicamos todo como si se lo contaras a un amigo. Nada de palabras raras ni tecnicismos que te confundan.
 
-#### 2. Optimización de Procesos
-Analizamos, simplificamos y potenciamos tus flujos de trabajo para lograr resultados medibles.
+#### 2. Alivio Mental Real
+No se trata solo de ahorrar tiempo. Es liberar tu cabeza de tareas repetitivas para que puedas pensar en grande.
 
-#### 3. Soluciones Confiables
-Tecnología robusta y segura, con resultados probados y soporte experto en cada paso.
+#### 3. Implementación Rápida
+Sistemas listos en semanas, no meses. Para que veas resultados sin esperar eternamente.
 
-#### 4. Ahorro de Tiempo
-Automatizá hasta el 80 % de tus tareas rutinarias y liberá recursos para innovar.
+#### 4. Sin Ataduras
+Empezá cuando quieras, crecé a tu ritmo. Sin contratos eternos ni compromisos que te aten.
 
-#### 5. Soporte Continuo
-Te acompañamos antes, durante y después de la implementación.
+#### 5. Acompañamiento Personalizado
+Te escuchamos antes de programar. Y seguimos ahí después de entregar. Siempre.
 
-#### 6. Innovación Constante
-Actualizamos nuestras soluciones con las últimas tecnologías en IA y automatización.
+#### 6. Resultados Medibles
+Menos errores, más control, y procesos que funcionan mientras vos te ocupás de lo importante.
 
 ---
 
 ## Call to Action (CTA)
 
 ### Badge
-Comenzá Hoy
+Diagnóstico Gratuito
 
 ### Título
-Empezá hoy tu transformación digital
+¿Listo para que tu negocio trabaje solo?
 
 ### Descripción
-Cada proceso optimizado es un paso hacia un negocio más rentable.
+Cada tarea que automatizás es tiempo que ganás. Y tiempo es lo que necesitás para crecer sin saturarte.
 
-Agenda una consulta gratuita y descubrí cómo la automatización puede cambiar tu forma de trabajar.
+Agendá un diagnóstico gratuito y te mostramos qué podés automatizar en tu negocio ahora mismo.
+
+**No necesitás ser técnico. Solo dar el primer paso.**
 
 ### Botones
-- **Primario**: Solicitar Consulta
+- **Primario**: Agendá tu Diagnóstico
 - **Secundario**: Conocer Más

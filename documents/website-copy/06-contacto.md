@@ -9,24 +9,24 @@
 ## Header
 
 ### Título
-Contáctanos
+Hablemos de tu negocio
 
 ### Descripción
-¿Tenés preguntas o querés saber cómo la automatización puede transformar tu negocio?
+¿Tenés dudas? ¿Querés saber si podés automatizar algo específico? ¿Necesitás un diagnóstico sin compromiso?
 
-En SolutiveMind estamos para ayudarte.
+Escribinos y te respondemos en menos de 24 horas.
 
-Escribinos y te responderemos en menos de 24 h.
+**Sin tecnicismos. Sin vueltas. Solo soluciones claras.**
 
 ---
 
 ## Formulario de Contacto
 
 ### Título de la Tarjeta
-Envíanos un mensaje
+Contanos qué necesitás
 
 ### Descripción
-Completá el formulario y un especialista de nuestro equipo se pondrá en contacto con vos.
+Completá el formulario y charlamos. Te mostramos cómo podés automatizar tu negocio sin complicarte.
 
 ### Campos del Formulario
 1. **Nombre Completo** (requerido)
@@ -63,9 +63,9 @@ Buenos Aires, Argentina
 ## Call to Action (CTA)
 
 ### Título
-Hablemos de tu próximo paso
+Cada conversación puede cambiar tu forma de trabajar
 
 ### Descripción
-Cada conversación puede ser el comienzo de una gran mejora.
+No necesitás saberlo todo. Solo dar el primer paso.
 
-Contáctanos hoy y descubrí cómo hacer crecer tu negocio con automatización inteligente.
+Escribinos hoy y descubrimos juntos cómo hacer que tu negocio trabaje solo mientras vos te enfocás en crecer.

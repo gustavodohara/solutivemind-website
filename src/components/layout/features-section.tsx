@@ -9,6 +9,9 @@ import {
   Clock,
   Users,
   Sparkles,
+  MessageCircle,
+  Brain,
+  Unlock,
   LucideIcon
 } from 'lucide-react'
 import { Card } from '@/components/ui/card'
@@ -26,6 +29,9 @@ const iconMap: Record<string, LucideIcon> = {
   'clock': Clock,
   'users': Users,
   'sparkles': Sparkles,
+  'message-circle': MessageCircle,
+  'brain': Brain,
+  'unlock': Unlock,
 }
 
 interface Feature {

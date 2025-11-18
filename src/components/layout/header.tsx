@@ -15,22 +15,26 @@ export function Header() {
   const { isActive } = useActivePath()
 
   return (
-    <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="text-xl font-bold">SolutiveMind</span>
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 backdrop-blur-md bg-background/80 supports-[backdrop-filter]:bg-background/60">
+      <div className="container mx-auto flex h-20 items-center justify-between px-6 md:px-12">
+        {/* Logo - larger and bolder */}
+        <Link href="/" className="flex items-center space-x-2 group">
+          <span className="text-2xl font-bold tracking-tight transition-colors group-hover:text-primary">
+            SolutiveMind
+          </span>
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden items-center space-x-6 md:flex">
+        {/* Desktop Navigation - improved spacing and hover */}
+        <nav className="hidden items-center space-x-8 md:flex">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               className={cn(
-                'hover:text-primary text-sm font-medium transition-colors',
-                isActive(item.href) ? 'text-primary' : 'text-muted-foreground'
+                'text-base font-medium transition-all duration-200 hover:text-primary relative',
+                isActive(item.href)
+                  ? 'text-primary after:absolute after:bottom-[-8px] after:left-0 after:right-0 after:h-0.5 after:bg-primary'
+                  : 'text-foreground/70 hover:text-foreground'
               )}
             >
               {item.label}
@@ -39,18 +43,18 @@ export function Header() {
         </nav>
 
         {/* Right side: Theme toggle + Mobile menu */}
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-4">
           <ThemeToggleSimple />
 
           {/* Mobile menu button */}
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="md:hidden h-10 w-10"
             onClick={() => setMobileMenuOpen(true)}
             aria-label="Abrir menú"
           >
-            <Menu className="h-5 w-5" />
+            <Menu className="h-6 w-6" />
           </Button>
         </div>
       </div>

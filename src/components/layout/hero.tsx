@@ -1,4 +1,7 @@
+'use client'
+
 import { ReactNode } from 'react'
+import { motion } from 'framer-motion'
 import { cn } from '@/lib/utils'
 
 interface HeroProps {
@@ -12,27 +15,55 @@ export function Hero({ title, description, actions, className }: HeroProps) {
   return (
     <section
       className={cn(
-        'from-muted/50 to-background relative overflow-hidden bg-gradient-to-b py-20 md:py-28',
+        'relative overflow-hidden py-24 md:py-40',
+        'bg-gradient-to-b from-muted/30 via-background to-background',
         className
       )}
     >
-      <div className="w-full px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl space-y-6 text-center">
-          {typeof title === 'string' ? (
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">{title}</h1>
-          ) : (
-            title
-          )}
+      <div className="section-container">
+        <div className="content-max-width space-y-8 text-center">
+          {/* Title with fade-up animation */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
+          >
+            <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
+              {title}
+            </h1>
+          </motion.div>
 
-          {typeof description === 'string' ? (
-            <p className="text-muted-foreground text-lg sm:text-xl">{description}</p>
-          ) : (
-            description
-          )}
+          {/* Description with slight delay */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
+          >
+            {typeof description === 'string' ? (
+              <p className="text-muted-foreground text-xl sm:text-2xl md:text-3xl font-light leading-relaxed">
+                {description}
+              </p>
+            ) : (
+              description
+            )}
+          </motion.div>
 
-          {actions && <div className="flex flex-wrap justify-center gap-4">{actions}</div>}
+          {/* Actions with more delay */}
+          {actions && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
+              className="flex flex-wrap justify-center gap-4 pt-4"
+            >
+              {actions}
+            </motion.div>
+          )}
         </div>
       </div>
+
+      {/* Optional: Gradient overlay for depth */}
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-50" />
     </section>
   )
 }

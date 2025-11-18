@@ -31,11 +31,11 @@ export function ProductDetail({ product }: ProductDetailProps) {
   }
 
   return (
-    <div className="grid gap-8 lg:grid-cols-2">
+    <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
       {/* Images */}
-      <div className="space-y-4">
+      <div className="space-y-6">
         {/* Main Image */}
-        <div className="bg-muted relative aspect-video w-full overflow-hidden rounded-lg">
+        <div className="bg-muted relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
           <Image
             src={product.images[selectedImage]}
             alt={`${product.name} - imagen ${selectedImage + 1}`}
@@ -53,7 +53,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
               <button
                 key={index}
                 onClick={() => setSelectedImage(index)}
-                className={`relative aspect-video overflow-hidden rounded-md border-2 transition-all ${
+                className={`relative aspect-[4/3] overflow-hidden rounded-xl border-2 transition-all ${
                   selectedImage === index
                     ? 'border-primary'
                     : 'hover:border-muted-foreground border-transparent'
@@ -73,29 +73,29 @@ export function ProductDetail({ product }: ProductDetailProps) {
       </div>
 
       {/* Product Info */}
-      <div className="space-y-6">
+      <div className="space-y-8">
         {/* Header */}
         <div className="space-y-4">
-          <Badge>{product.category}</Badge>
-          <h1 className="text-3xl font-bold tracking-tight lg:text-4xl">{product.name}</h1>
-          <p className="text-primary text-2xl font-semibold">{formatPrice(product.price)}</p>
+          <Badge className="text-sm px-3 py-1">{product.category}</Badge>
+          <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">{product.name}</h1>
+          <p className="text-primary text-3xl font-bold">{formatPrice(product.price)}</p>
         </div>
 
         {/* Description */}
-        <div className="prose prose-slate dark:prose-invert">
-          <p className="text-muted-foreground whitespace-pre-line">{product.description}</p>
+        <div className="prose prose-slate dark:prose-invert max-w-none">
+          <p className="text-muted-foreground text-lg leading-relaxed whitespace-pre-line">{product.description}</p>
         </div>
 
         {/* Features */}
         {product.features && product.features.length > 0 && (
-          <Card>
-            <CardContent className="pt-6">
-              <h3 className="mb-4 font-semibold">Características incluidas:</h3>
-              <ul className="space-y-2">
+          <Card className="rounded-2xl border-border/50">
+            <CardContent className="p-8">
+              <h3 className="mb-6 text-xl font-bold">Características incluidas:</h3>
+              <ul className="space-y-3">
                 {product.features.map((feature, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <Check className="text-primary mt-0.5 h-5 w-5 shrink-0" />
-                    <span className="text-sm">{feature}</span>
+                  <li key={index} className="flex items-start gap-3">
+                    <Check className="text-primary mt-0.5 h-6 w-6 shrink-0" />
+                    <span className="text-base leading-relaxed">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -104,23 +104,23 @@ export function ProductDetail({ product }: ProductDetailProps) {
         )}
 
         {/* CTA */}
-        <div className="space-y-4">
-          <Button size="lg" className="w-full" onClick={handleContactWhatsApp}>
-            <MessageCircle className="mr-2 h-5 w-5" />
+        <div className="space-y-4 pt-4">
+          <Button size="lg" className="w-full text-lg py-6" onClick={handleContactWhatsApp}>
+            <MessageCircle className="mr-2 h-6 w-6" />
             Consultar por WhatsApp
           </Button>
-          <p className="text-muted-foreground text-center text-sm">
+          <p className="text-muted-foreground text-center text-base">
             Contáctanos para recibir una cotización personalizada
           </p>
         </div>
 
         {/* Stock Status */}
         {product.inStock ? (
-          <Badge variant="outline" className="w-fit">
+          <Badge variant="outline" className="w-fit text-sm px-3 py-1">
             Disponible
           </Badge>
         ) : (
-          <Badge variant="destructive" className="w-fit">
+          <Badge variant="destructive" className="w-fit text-sm px-3 py-1">
             No disponible
           </Badge>
         )}

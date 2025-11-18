@@ -28,14 +28,14 @@ export { activePalette, allPalettes } from '@/lib/theme/palettes'
 // These are automatically loaded from activePalette in palettes.ts
 export const THEME_CONFIG = {
   light: {
-    primary: 'oklch(0.69 0.11 198)', // Cyan
-    secondary: 'oklch(0.32 0.08 245)', // Dark blue
-    accent: 'oklch(0.92 0.22 125)', // Lime green
+    primary: 'oklch(0.55 0.20 10)', // Vibrant red
+    secondary: 'oklch(0.45 0.15 250)', // Deep blue
+    accent: 'oklch(0.65 0.22 200)', // Bright blue
   },
   dark: {
-    primary: 'oklch(0.75 0.11 198)', // Brighter cyan
-    secondary: 'oklch(0.40 0.08 245)', // Lighter dark blue
-    accent: 'oklch(0.90 0.22 125)', // Bright lime
+    primary: 'oklch(0.60 0.20 10)', // Brighter red
+    secondary: 'oklch(0.50 0.15 250)', // Lighter blue
+    accent: 'oklch(0.70 0.22 200)', // Bright blue
   },
 } as const
 

@@ -15,7 +15,7 @@ export default function NosotrosPage() {
     <div>
       {/* Hero */}
       <Hero
-        title="🧠 Sobre SolutiveMind"
+        title="Sobre SolutiveMind"
         description={
           <>
             Impulsamos la transformación digital de las empresas a través de automatización
@@ -33,7 +33,7 @@ export default function NosotrosPage() {
           <div className="mx-auto max-w-3xl space-y-12">
             {/* Who We Are */}
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tight">💡 Quiénes somos</h2>
+              <h2 className="text-3xl font-bold tracking-tight">Quiénes somos</h2>
               <div className="prose prose-slate dark:prose-invert max-w-none">
                 <p className="text-muted-foreground text-lg leading-relaxed">
                   En SolutiveMind, creemos que la tecnología tiene que adaptarse a las personas, no
@@ -53,7 +53,7 @@ export default function NosotrosPage() {
             <div className="space-y-8">
               <Card>
                 <CardHeader>
-                  <CardTitle>🎯 Misión</CardTitle>
+                  <CardTitle>Misión</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
@@ -65,7 +65,7 @@ export default function NosotrosPage() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>🌍 Visión</CardTitle>
+                  <CardTitle>Visión</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
@@ -77,14 +77,14 @@ export default function NosotrosPage() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>💎 Nuestros valores</CardTitle>
+                  <CardTitle>Nuestros valores</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="text-muted-foreground space-y-2">
-                    <li>🚀 Innovación: siempre un paso adelante.</li>
-                    <li>🧩 Excelencia: buscamos resultados medibles y duraderos.</li>
-                    <li>🤝 Compromiso: tu éxito es el nuestro.</li>
-                    <li>💬 Transparencia: claridad y confianza en cada proyecto.</li>
+                    <li>Innovación: siempre un paso adelante.</li>
+                    <li>Excelencia: buscamos resultados medibles y duraderos.</li>
+                    <li>Compromiso: tu éxito es el nuestro.</li>
+                    <li>Transparencia: claridad y confianza en cada proyecto.</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -92,7 +92,7 @@ export default function NosotrosPage() {
 
             {/* What We Do */}
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tight">⚙️ Qué hacemos</h2>
+              <h2 className="text-3xl font-bold tracking-tight">Qué hacemos</h2>
               <div className="prose prose-slate dark:prose-invert max-w-none">
                 <p className="text-muted-foreground text-lg leading-relaxed">
                   Ofrecemos soluciones completas para cada etapa de tu transformación digital:
@@ -110,7 +110,7 @@ export default function NosotrosPage() {
 
             {/* CTA */}
             <div className="bg-muted/50 space-y-4 rounded-lg border-2 p-8 text-center">
-              <h3 className="text-2xl font-bold">🚀 ¿Listo para dar el siguiente paso?</h3>
+              <h3 className="text-2xl font-bold">¿Listo para dar el siguiente paso?</h3>
               <p className="text-muted-foreground">
                 Descubrí cómo la automatización puede transformar tu forma de trabajar.
               </p>
@@ -119,7 +119,7 @@ export default function NosotrosPage() {
                   <Link href="/servicios">Ver Servicios</Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
-                  <Link href="/contacto">💬 Contactar</Link>
+                  <Link href="/contacto">Contactar</Link>
                 </Button>
               </div>
             </div>

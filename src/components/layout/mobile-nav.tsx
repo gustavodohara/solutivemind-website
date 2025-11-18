@@ -12,17 +12,17 @@ interface MobileNavProps {
 export function MobileNav({ open, onOpenChange }: MobileNavProps) {
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-        <SheetHeader>
-          <SheetTitle>Menú</SheetTitle>
+      <SheetContent side="right" className="w-[320px] sm:w-[400px] backdrop-blur-md">
+        <SheetHeader className="pb-6">
+          <SheetTitle className="text-2xl font-bold">Menú</SheetTitle>
         </SheetHeader>
-        <nav className="mt-6 flex flex-col space-y-4">
+        <nav className="flex flex-col space-y-2">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               onClick={() => onOpenChange(false)}
-              className="hover:text-primary text-lg font-medium transition-colors"
+              className="text-xl font-medium transition-all duration-200 hover:text-primary hover:translate-x-2 py-4 px-2 rounded-lg hover:bg-muted/50"
             >
               {item.label}
             </Link>

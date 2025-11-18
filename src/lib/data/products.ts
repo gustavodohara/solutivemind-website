@@ -3,11 +3,11 @@ import { Product } from '@/lib/types'
 export const PRODUCTS: Product[] = [
   {
     id: '1',
-    name: '🤖 Automatización Empresarial Inteligente',
+    name: 'Automatización Empresarial Inteligente',
     slug: 'automatizacion-empresarial-inteligente',
     description: `Transformá tus procesos con flujos de trabajo automatizados que ahorran tiempo, reducen errores y aumentan la eficiencia.
 
-💡 Ideal para empresas que quieren escalar sin aumentar costos operativos.`,
+Ideal para empresas que quieren escalar sin aumentar costos operativos.`,
     shortDescription:
       'Transformá tus procesos con flujos de trabajo automatizados que ahorran tiempo, reducen errores y aumentan la eficiencia.',
     price: 0, // Precio a consultar
@@ -30,11 +30,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '2',
-    name: '📈 Optimización de Procesos',
+    name: 'Optimización de Procesos',
     slug: 'optimizacion-de-procesos',
     description: `Analizamos tus operaciones actuales para identificar cuellos de botella y rediseñar flujos más ágiles y rentables.
 
-💡 Ideal para pymes que buscan orden, claridad y control.`,
+Ideal para pymes que buscan orden, claridad y control.`,
     shortDescription:
       'Analizamos tus operaciones actuales para identificar cuellos de botella y rediseñar flujos más ágiles y rentables.',
     price: 0, // Precio a consultar
@@ -57,11 +57,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '3',
-    name: '🧠 Soluciones con IA Aplicada',
+    name: 'Soluciones con IA Aplicada',
     slug: 'soluciones-con-ia-aplicada',
     description: `Llevá tu negocio al siguiente nivel con inteligencia artificial práctica y accesible.
 
-💡 Ideal para empresas que buscan innovar sin depender de grandes equipos técnicos.`,
+Ideal para empresas que buscan innovar sin depender de grandes equipos técnicos.`,
     shortDescription:
       'Llevá tu negocio al siguiente nivel con inteligencia artificial práctica y accesible.',
     price: 0, // Precio a consultar

@@ -15,13 +15,13 @@ export default function ContactoPage() {
       <div className="space-y-10">
         {/* Header */}
         <div className="space-y-4 text-center">
-          <h1 className="text-4xl font-bold tracking-tight">💬 Contáctanos</h1>
+          <h1 className="text-4xl font-bold tracking-tight">Contáctanos</h1>
           <p className="text-muted-foreground text-lg">
             ¿Tenés preguntas o querés saber cómo la automatización puede transformar tu negocio?
             <br />
             En SolutiveMind estamos para ayudarte.
             <br />
-            💡 Escribinos y te responderemos en menos de 24 h.
+            Escribinos y te responderemos en menos de 24 h.
           </p>
         </div>
 
@@ -30,7 +30,7 @@ export default function ContactoPage() {
           <div className="lg:col-span-2">
             <Card>
               <CardHeader>
-                <CardTitle>📩 Envíanos un mensaje</CardTitle>
+                <CardTitle>Envíanos un mensaje</CardTitle>
                 <CardDescription>
                   Completá el formulario y un especialista de nuestro equipo se pondrá en contacto
                   con vos.
@@ -46,12 +46,12 @@ export default function ContactoPage() {
           <div className="space-y-6">
             <Card>
               <CardHeader>
-                <CardTitle>📞 Otros medios de contacto</CardTitle>
+                <CardTitle>Otros medios de contacto</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
                   <p className="text-muted-foreground text-sm">
-                    📧 Email:{' '}
+                    Email:{' '}
                     <a
                       href={`mailto:${CONTACT_INFO.email}`}
                       className="text-primary hover:underline"
@@ -62,7 +62,7 @@ export default function ContactoPage() {
                 </div>
                 <div>
                   <p className="text-muted-foreground text-sm">
-                    📱 Teléfono:{' '}
+                    Teléfono:{' '}
                     <a
                       href={`tel:${CONTACT_INFO.phone}`}
                       className="text-primary hover:underline"
@@ -73,7 +73,7 @@ export default function ContactoPage() {
                 </div>
                 <div>
                   <p className="text-muted-foreground text-sm">
-                    💬 WhatsApp:{' '}
+                    WhatsApp:{' '}
                     <a
                       href={`https://wa.me/${CONTACT_INFO.whatsapp}`}
                       target="_blank"
@@ -86,7 +86,7 @@ export default function ContactoPage() {
                 </div>
                 <div>
                   <p className="text-muted-foreground text-sm">
-                    📍 Ubicación: {CONTACT_INFO.address}
+                    Ubicación: {CONTACT_INFO.address}
                   </p>
                 </div>
               </CardContent>
@@ -100,7 +100,7 @@ export default function ContactoPage() {
             <Card className="mx-auto max-w-3xl border-2">
               <CardHeader className="text-center">
                 <CardTitle className="text-3xl sm:text-4xl">
-                  🤝 Hablemos de tu próximo paso
+                  Hablemos de tu próximo paso
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center">

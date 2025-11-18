@@ -161,11 +161,62 @@ export const originalPalette: ThemePalette = {
   },
 }
 
+// Laravel Cloud Palette (Dark-first design inspired by https://cloud.laravel.com)
+export const laravelCloudPalette: ThemePalette = {
+  name: 'Laravel Cloud',
+  description: 'Dark navy with cyan accents inspired by Laravel Cloud',
+  light: {
+    // Dark-first: light mode is the "dark" class but has dark colors as default
+    background: 'oklch(0.12 0.02 250)',      /* #0A0E27 - Very dark navy */
+    foreground: 'oklch(0.92 0.005 240)',     /* #E5E7EB - Off-white text */
+    card: 'oklch(0.14 0.02 250 / 95%)',      /* #111827 with transparency */
+    cardForeground: 'oklch(0.92 0.005 240)',
+    popover: 'oklch(0.14 0.02 250 / 95%)',
+    popoverForeground: 'oklch(0.92 0.005 240)',
+    primary: 'oklch(0.72 0.14 195)',         /* #06B6D4 - Bright cyan */
+    primaryForeground: 'oklch(1 0 0)',       /* Pure white for contrast */
+    secondary: 'oklch(0.58 0.22 250)',       /* #3B82F6 - Bright blue */
+    secondaryForeground: 'oklch(1 0 0)',
+    accent: 'oklch(0.72 0.14 195)',          /* #06B6D4 - Cyan */
+    accentForeground: 'oklch(0.12 0.02 250)',
+    muted: 'oklch(0.18 0.02 250)',           /* Slightly lighter than background */
+    mutedForeground: 'oklch(0.65 0.01 240)', /* Medium gray */
+    destructive: 'oklch(0.55 0.25 25)',      /* #EF4444 - Red */
+    destructiveForeground: 'oklch(1 0 0)',
+    border: 'oklch(1 0 0 / 10%)',            /* 10% white - very subtle borders */
+    input: 'oklch(1 0 0 / 15%)',             /* Slightly more visible for inputs */
+    ring: 'oklch(0.72 0.14 195)',            /* Cyan focus ring */
+  },
+  dark: {
+    // Inverted: "dark" mode becomes light
+    background: 'oklch(0.98 0.005 210)',     /* #F4F9FA - Off-white */
+    foreground: 'oklch(0.20 0.05 240)',      /* Dark blue text */
+    card: 'oklch(1 0 0)',                    /* Pure white */
+    cardForeground: 'oklch(0.20 0.05 240)',
+    popover: 'oklch(1 0 0)',
+    popoverForeground: 'oklch(0.20 0.05 240)',
+    primary: 'oklch(0.69 0.11 198)',         /* Cyan (slightly darker for light bg) */
+    primaryForeground: 'oklch(1 0 0)',
+    secondary: 'oklch(0.32 0.08 245)',       /* Dark blue */
+    secondaryForeground: 'oklch(1 0 0)',
+    accent: 'oklch(0.69 0.11 198)',          /* Cyan */
+    accentForeground: 'oklch(0.20 0.05 240)',
+    muted: 'oklch(0.95 0.005 210)',          /* Light gray */
+    mutedForeground: 'oklch(0.45 0.03 240)',
+    destructive: 'oklch(0.55 0.25 25)',      /* Red */
+    destructiveForeground: 'oklch(1 0 0)',
+    border: 'oklch(0.90 0.005 210)',         /* Light gray border */
+    input: 'oklch(0.90 0.005 210)',
+    ring: 'oklch(0.69 0.11 198)',            /* Cyan focus ring */
+  },
+}
+
 // Export active palette
-export const activePalette = solutiveMindPalette
+export const activePalette = laravelCloudPalette
 
 // Export all palettes
 export const allPalettes = {
+  laravelCloud: laravelCloudPalette,
   solutiveMind: solutiveMindPalette,
   original: originalPalette,
 }

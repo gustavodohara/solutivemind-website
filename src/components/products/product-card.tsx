@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Product } from '@/lib/types'
-import { ArrowRight } from 'lucide-react'
+import { cn } from '@/lib/utils'
 
 interface ProductCardProps {
   product: Product
@@ -20,37 +20,40 @@ export function ProductCard({ product }: ProductCardProps) {
   }
 
   return (
-    <Card className="overflow-hidden transition-all hover:shadow-lg">
-      {/* Image */}
-      <div className="bg-muted relative aspect-video w-full overflow-hidden">
-        <Image
-          src={product.images[0]}
-          alt={product.name}
-          fill
-          className="object-cover transition-transform hover:scale-105"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-      </div>
-
-      <CardHeader>
-        {/* Category Badge */}
-        <Badge className="mb-2 w-fit">{product.category}</Badge>
-
-        <CardTitle className="line-clamp-2">{product.name}</CardTitle>
-        <CardDescription className="line-clamp-3">{product.shortDescription}</CardDescription>
-      </CardHeader>
-
-      <CardContent>
-        <div className="flex items-center justify-between">
-          <p className="text-lg font-semibold">{formatPrice(product.price)}</p>
-          <Button asChild>
-            <Link href={`/servicios/${product.slug}`}>
-              Ver más
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
+    <Link href={`/servicios/${product.slug}`}>
+      <Card className="group overflow-hidden">
+        {/* Image */}
+        <div className="bg-muted relative aspect-video w-full overflow-hidden rounded-t-xl">
+          <Image
+            src={product.images[0]}
+            alt={product.name}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-110"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
         </div>
-      </CardContent>
-    </Card>
+
+        <CardHeader>
+          <div className="flex items-start justify-between gap-4">
+            <CardTitle className="line-clamp-2 group-hover:text-primary transition-colors">
+              {product.name}
+            </CardTitle>
+            <Badge variant="outline" className="shrink-0">
+              {product.category}
+            </Badge>
+          </div>
+          <CardDescription className="line-clamp-3">{product.shortDescription}</CardDescription>
+        </CardHeader>
+
+        <CardContent>
+          <div className="flex items-center justify-between">
+            <span className="text-2xl font-bold text-primary">{formatPrice(product.price)}</span>
+            <Button variant="ghost" size="sm" className="group-hover:bg-primary/10">
+              Ver más →
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
+    </Link>
   )
 }

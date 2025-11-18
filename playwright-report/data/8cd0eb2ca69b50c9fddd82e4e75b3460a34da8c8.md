@@ -1,0 +1,117 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "SolutiveMind" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]: SolutiveMind
+        - generic [ref=e7]:
+          - button "Cambiar tema" [ref=e8]:
+            - img
+          - button "Abrir menú" [ref=e9]:
+            - img
+    - main [ref=e10]:
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - heading "💬 Contáctanos" [level=1] [ref=e14]
+          - paragraph [ref=e15]:
+            - text: ¿Tenés preguntas o querés saber cómo la automatización puede transformar tu negocio?
+            - text: En SolutiveMind estamos para ayudarte.
+            - text: 💡 Escribinos y te responderemos en menos de 24 h.
+        - generic [ref=e16]:
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: 📩 Envíanos un mensaje
+              - generic [ref=e21]: Completá el formulario y un especialista de nuestro equipo se pondrá en contacto con vos.
+            - generic [ref=e23]:
+              - generic [ref=e24]:
+                - generic [ref=e25]: Nombre
+                - textbox "Nombre" [ref=e26]:
+                  - /placeholder: Juan Pérez
+              - generic [ref=e27]:
+                - generic [ref=e28]: Email
+                - textbox "Email" [ref=e29]:
+                  - /placeholder: juan@ejemplo.com
+              - generic [ref=e30]:
+                - generic [ref=e31]: Teléfono
+                - textbox "Teléfono" [ref=e32]:
+                  - /placeholder: +54 9 11 1234 5678
+                - paragraph [ref=e33]: (Incluí el código de área para poder contactarte correctamente)
+              - generic [ref=e34]:
+                - generic [ref=e35]: Seleccioná un servicio
+                - combobox "Seleccioná un servicio" [ref=e36]:
+                  - generic: Seleccioná un servicio
+                  - img
+                - combobox [ref=e37]
+                - paragraph [ref=e38]: "(Desplegable con opciones: Automatización Empresarial / Optimización de Procesos / Soluciones con IA / Otro)"
+              - generic [ref=e39]:
+                - generic [ref=e40]: Cuéntanos cómo podemos ayudarte…
+                - textbox "Cuéntanos cómo podemos ayudarte…" [ref=e41]:
+                  - /placeholder: ✍️ Hasta 1000 caracteres
+                - paragraph [ref=e42]: ✍️ Hasta 1000 caracteres
+              - button "Enviar mensaje" [ref=e43]:
+                - img
+                - text: Enviar mensaje
+          - generic [ref=e45]:
+            - generic [ref=e47]: 📞 Otros medios de contacto
+            - generic [ref=e48]:
+              - paragraph [ref=e50]:
+                - text: "📧 Email:"
+                - link "contacto@solutivemind.com" [ref=e51] [cursor=pointer]:
+                  - /url: mailto:contacto@solutivemind.com
+              - paragraph [ref=e53]:
+                - text: "📱 Teléfono:"
+                - link "+54 9 11 2409 0216" [ref=e54] [cursor=pointer]:
+                  - /url: tel:+54 9 11 2409 0216
+              - paragraph [ref=e56]:
+                - text: "💬 WhatsApp:"
+                - link "Enviar mensaje" [ref=e57] [cursor=pointer]:
+                  - /url: https://wa.me/5491124090216
+              - paragraph [ref=e59]: "📍 Ubicación: Buenos Aires, Argentina"
+        - generic [ref=e62]:
+          - generic [ref=e64]: 🤝 Hablemos de tu próximo paso
+          - generic [ref=e66]:
+            - text: Cada conversación puede ser el comienzo de una gran mejora.
+            - text: Contáctanos hoy y descubrí cómo hacer crecer tu negocio con automatización inteligente.
+    - contentinfo [ref=e67]:
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - generic [ref=e70]:
+            - heading "SolutiveMind" [level=3] [ref=e71]
+            - paragraph [ref=e72]: Servicios automatizados para impulsar tu negocio con tecnología de vanguardia.
+          - generic [ref=e73]:
+            - heading "Enlaces Rápidos" [level=3] [ref=e74]
+            - navigation [ref=e75]:
+              - link "Inicio" [ref=e76] [cursor=pointer]:
+                - /url: /
+              - link "Servicios" [ref=e77] [cursor=pointer]:
+                - /url: /servicios
+              - link "Sobre Nosotros" [ref=e78] [cursor=pointer]:
+                - /url: /nosotros
+              - link "Contacto" [ref=e79] [cursor=pointer]:
+                - /url: /contacto
+          - generic [ref=e80]:
+            - heading "Contacto" [level=3] [ref=e81]
+            - generic [ref=e82]:
+              - generic [ref=e83]:
+                - img [ref=e84]
+                - link "contacto@solutivemind.com" [ref=e87] [cursor=pointer]:
+                  - /url: mailto:contacto@solutivemind.com
+              - generic [ref=e88]:
+                - img [ref=e89]
+                - link "+54 9 11 2409 0216" [ref=e91] [cursor=pointer]:
+                  - /url: tel:+54 9 11 2409 0216
+              - generic [ref=e92]:
+                - img [ref=e93]
+                - generic [ref=e96]: Buenos Aires, Argentina
+        - paragraph [ref=e98]: © 2025 SolutiveMind. Todos los derechos reservados.
+  - button "Contactar por WhatsApp" [ref=e99]:
+    - img
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e105] [cursor=pointer]:
+    - img [ref=e106]
+  - alert [ref=e110]
+```

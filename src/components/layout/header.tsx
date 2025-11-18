@@ -15,11 +15,23 @@ export function Header() {
   const { isActive } = useActivePath()
 
   return (
-    <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur">
+    <header className={cn(
+      'sticky top-0 z-50 w-full',
+      'bg-background/80 backdrop-blur-md',
+      'border-b border-white/10',
+      'transition-colors duration-200'
+    )}>
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-xl font-bold">SolutiveMind</span>
+          <span className={cn(
+            'text-xl font-bold',
+            'bg-gradient-to-r from-primary via-secondary to-primary',
+            'bg-clip-text text-transparent',
+            'animate-gradient'
+          )}>
+            SolutiveMind
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -29,8 +41,14 @@ export function Header() {
               key={item.href}
               href={item.href}
               className={cn(
-                'hover:text-primary text-sm font-medium transition-colors',
-                isActive(item.href) ? 'text-primary' : 'text-muted-foreground'
+                'text-sm font-medium transition-all duration-200',
+                'relative after:absolute after:bottom-0 after:left-0',
+                'after:h-[2px] after:w-0 after:bg-primary',
+                'after:transition-all after:duration-300',
+                'hover:after:w-full hover:text-primary',
+                isActive(item.href)
+                  ? 'text-primary after:w-full'
+                  : 'text-muted-foreground'
               )}
             >
               {item.label}

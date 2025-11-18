@@ -1,13 +1,18 @@
 import Link from 'next/link'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { CONTACT_INFO, NAV_ITEMS } from '@/lib/constants/navigation'
+import { cn } from '@/lib/utils'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-muted/50 border-t">
-      <div className="container mx-auto px-4 py-12 md:px-6">
+    <footer className={cn(
+      'border-t border-white/10',
+      'bg-background/50 backdrop-blur-sm',
+      'py-12 md:py-16'
+    )}>
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Company Info */}
           <div className="space-y-4">

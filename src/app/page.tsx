@@ -57,7 +57,7 @@ const features = [
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
       <Hero
         title={
@@ -93,17 +93,22 @@ export default function HomePage() {
             </Button>
           </>
         }
+        className="bg-gradient-to-b from-background to-muted/10"
       />
 
       {/* Features Section */}
-      <FeaturesSection
-        title="💼 ¿Por qué elegir SolutiveMind?"
-        description="Soluciones completas de automatización diseñadas para llevar tu negocio al siguiente nivel."
-        features={features}
-      />
+      <section className="py-20 md:py-32 bg-gradient-to-b from-muted/10 to-background">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <FeaturesSection
+            title="💼 ¿Por qué elegir SolutiveMind?"
+            description="Soluciones completas de automatización diseñadas para llevar tu negocio al siguiente nivel."
+            features={features}
+          />
+        </div>
+      </section>
 
       {/* CTA Section */}
-      <section className="bg-muted/50 border-t py-16 md:py-24">
+      <section className="bg-gradient-to-b from-background to-muted/10 border-t py-16 md:py-24">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <Card className="mx-auto max-w-3xl border-2">
             <CardHeader className="text-center">

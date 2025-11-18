@@ -17,9 +17,9 @@ Ideal para empresas que quieren escalar sin saturar a su equipo ni aumentar cost
     price: 0, // Precio a consultar
     currency: 'ARS',
     images: [
-      '/images/products/placeholder.svg',
-      '/images/products/placeholder.svg',
-      '/images/products/placeholder.svg',
+      '/images/products/automatizacion-empresarial.svg',
+      '/images/products/automatizacion-empresarial.svg',
+      '/images/products/automatizacion-empresarial.svg',
     ],
     category: 'Automatización',
     features: [
@@ -50,9 +50,9 @@ Ideal para PyMEs que necesitan orden, claridad y la tranquilidad de saber que na
     price: 0, // Precio a consultar
     currency: 'ARS',
     images: [
-      '/images/products/placeholder.svg',
-      '/images/products/placeholder.svg',
-      '/images/products/placeholder.svg',
+      '/images/products/optimizacion-procesos.svg',
+      '/images/products/optimizacion-procesos.svg',
+      '/images/products/optimizacion-procesos.svg',
     ],
     category: 'Optimización',
     features: [
@@ -81,9 +81,9 @@ Ideal para empresas que quieren innovar, atender mejor y tomar decisiones con da
     price: 0, // Precio a consultar
     currency: 'ARS',
     images: [
-      '/images/products/placeholder.svg',
-      '/images/products/placeholder.svg',
-      '/images/products/placeholder.svg',
+      '/images/products/ia-aplicada.svg',
+      '/images/products/ia-aplicada.svg',
+      '/images/products/ia-aplicada.svg',
     ],
     category: 'Inteligencia Artificial',
     features: [

@@ -1,0 +1,22 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0f172a"/>
+
+  <!-- Simple centered icon - Gear/Cog for automation -->
+  <circle cx="400" cy="300" r="100" fill="none" stroke="#06b6d4" stroke-width="4"/>
+
+  <!-- Gear teeth -->
+  <rect x="395" y="195" width="10" height="20" fill="#06b6d4"/>
+  <rect x="395" y="385" width="10" height="20" fill="#06b6d4"/>
+  <rect x="495" y="295" width="20" height="10" fill="#06b6d4"/>
+  <rect x="285" y="295" width="20" height="10" fill="#06b6d4"/>
+
+  <!-- Diagonal teeth -->
+  <rect x="460" y="230" width="10" height="20" fill="#06b6d4" transform="rotate(45 465 240)"/>
+  <rect x="330" y="230" width="10" height="20" fill="#06b6d4" transform="rotate(-45 335 240)"/>
+  <rect x="460" y="350" width="10" height="20" fill="#06b6d4" transform="rotate(-45 465 360)"/>
+  <rect x="330" y="350" width="10" height="20" fill="#06b6d4" transform="rotate(45 335 360)"/>
+
+  <!-- Center circle -->
+  <circle cx="400" cy="300" r="40" fill="none" stroke="#06b6d4" stroke-width="4"/>
+</svg>

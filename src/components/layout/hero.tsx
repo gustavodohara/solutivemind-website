@@ -44,7 +44,9 @@ export function Hero({ title, description, actions, className }: HeroProps) {
                 {description}
               </p>
             ) : (
-              description
+              <div className="text-muted-foreground text-xl sm:text-2xl md:text-3xl font-light leading-relaxed">
+                {description}
+              </div>
             )}
           </motion.div>
 

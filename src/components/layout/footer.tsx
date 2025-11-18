@@ -1,6 +1,24 @@
 import Link from 'next/link'
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { MapPin, MessageCircle } from 'lucide-react'
 import { CONTACT_INFO, NAV_ITEMS } from '@/lib/constants/navigation'
+
+// Instagram SVG icon (lucide's Instagram is deprecated)
+const InstagramIcon = ({ className }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+  </svg>
+)
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -13,7 +31,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">SolutiveMind</h3>
             <p className="text-muted-foreground text-sm">
-              Servicios automatizados para impulsar tu negocio con tecnología de vanguardia.
+              Automatización accesible para que tu negocio trabaje solo. Sin tecnicismos, sin vueltas.
             </p>
           </div>
 
@@ -38,21 +56,25 @@ export function Footer() {
             <h3 className="text-lg font-semibold">Contacto</h3>
             <div className="text-muted-foreground flex flex-col space-y-2 text-sm">
               <div className="flex items-center space-x-2">
-                <Mail className="h-4 w-4" />
+                <MessageCircle className="h-4 w-4" />
                 <a
-                  href={`mailto:${CONTACT_INFO.email}`}
-                  className="hover:text-primary transition-colors"
-                >
-                  {CONTACT_INFO.email}
-                </a>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4" />
-                <a
-                  href={`tel:${CONTACT_INFO.phone}`}
+                  href={`https://wa.me/${CONTACT_INFO.whatsapp}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
                 >
                   {CONTACT_INFO.phone}
+                </a>
+              </div>
+              <div className="flex items-center space-x-2">
+                <InstagramIcon className="h-4 w-4" />
+                <a
+                  href={CONTACT_INFO.social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  @solutive.mind
                 </a>
               </div>
               <div className="flex items-center space-x-2">
@@ -65,7 +87,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="text-muted-foreground mt-8 border-t pt-8 text-center text-sm">
-          <p>© {currentYear} SolutiveMind. Todos los derechos reservados.</p>
+          <p>© 2025 SolutiveMind. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

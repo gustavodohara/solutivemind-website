@@ -5,24 +5,28 @@ export const PRODUCTS: Product[] = [
     id: '1',
     name: 'Automatización Empresarial Inteligente',
     slug: 'automatizacion-empresarial-inteligente',
-    description: `Transformá tus procesos con flujos de trabajo automatizados que ahorran tiempo, reducen errores y aumentan la eficiencia.
+    description: `¿Te imaginás despertar y ver que tu negocio ya confirmó turnos, envió recordatorios y registró pagos?
 
-Ideal para empresas que quieren escalar sin aumentar costos operativos.`,
+Así funciona la automatización. No es magia, es tecnología bien usada.
+
+Dejá de perseguir clientes que olvidan citas, de anotar todo manual y de preocuparte si se te pasó algo. Tus sistemas trabajan 24/7 para que vos no tengas que estar pendiente de todo.
+
+Ideal para empresas que quieren escalar sin saturar a su equipo ni aumentar costos operativos.`,
     shortDescription:
-      'Transformá tus procesos con flujos de trabajo automatizados que ahorran tiempo, reducen errores y aumentan la eficiencia.',
+      'Que tu negocio trabaje solo: recordatorios, bots, IA, agendas y respuestas automáticas. Sin vueltas, sin estrés.',
     price: 0, // Precio a consultar
     currency: 'ARS',
     images: [
-      '/images/products/placeholder.svg',
-      '/images/products/placeholder.svg',
-      '/images/products/placeholder.svg',
+      '/images/products/automatizacion-empresarial.svg',
+      '/images/products/automatizacion-empresarial.svg',
+      '/images/products/automatizacion-empresarial.svg',
     ],
     category: 'Automatización',
     features: [
-      'Integración entre herramientas (CRM, ERP, sistemas internos)',
-      'Automatización de tareas repetitivas',
-      'Flujos inteligentes con IA para atención, ventas o soporte',
-      'Monitoreo y reportes automáticos',
+      'Integración total: Conectamos las herramientas que ya usás (CRM, ERP, WhatsApp, email) para que hablen entre sí',
+      'Automatización real: Agendas, recordatorios, cobros... todo funciona solo',
+      'Atención inteligente 24/7: Chatbots que responden como si fueras vos, incluso de madrugada',
+      'Control en tiempo real: Reportes y monitoreo automático para que siempre sepas qué está pasando',
     ],
     inStock: true,
     createdAt: new Date().toISOString(),
@@ -32,24 +36,30 @@ Ideal para empresas que quieren escalar sin aumentar costos operativos.`,
     id: '2',
     name: 'Optimización de Procesos',
     slug: 'optimizacion-de-procesos',
-    description: `Analizamos tus operaciones actuales para identificar cuellos de botella y rediseñar flujos más ágiles y rentables.
+    description: `¿Sentís que tu negocio funciona "a los tumbos"?
 
-Ideal para pymes que buscan orden, claridad y control.`,
+Tareas que se pierden. Errores que se repiten. Procesos que dependen de una sola persona. Si esa persona falta, todo se frena.
+
+Eso no es falta de compromiso. Es falta de estructura.
+
+Miramos cómo trabajás hoy, te decimos exactamente qué está fallando y rediseñamos los flujos para que todo sea más claro, rápido y confiable.
+
+Ideal para PyMEs que necesitan orden, claridad y la tranquilidad de saber que nada importante se va a caer.`,
     shortDescription:
-      'Analizamos tus operaciones actuales para identificar cuellos de botella y rediseñar flujos más ágiles y rentables.',
+      'Detectamos qué te está frenando y ordenamos tu operación para que puedas crecer sin caos.',
     price: 0, // Precio a consultar
     currency: 'ARS',
     images: [
-      '/images/products/placeholder.svg',
-      '/images/products/placeholder.svg',
-      '/images/products/placeholder.svg',
+      '/images/products/optimizacion-procesos.svg',
+      '/images/products/optimizacion-procesos.svg',
+      '/images/products/optimizacion-procesos.svg',
     ],
     category: 'Optimización',
     features: [
-      'Auditoría de procesos y diagnóstico',
-      'Diseño de mejoras basadas en datos',
-      'Implementación de herramientas de eficiencia',
-      'Capacitación al equipo',
+      'Auditoría sin vueltas: Te decimos exactamente dónde perdés tiempo y energía',
+      'Mejoras con fundamento: Soluciones basadas en datos reales, no en suposiciones',
+      'Herramientas que funcionan: Implementamos sistemas simples que tu equipo va a querer usar',
+      'Capacitación incluida: Enseñamos paso a paso para que nadie se quede atrás',
     ],
     inStock: true,
     createdAt: new Date().toISOString(),
@@ -59,23 +69,27 @@ Ideal para pymes que buscan orden, claridad y control.`,
     id: '3',
     name: 'Soluciones con IA Aplicada',
     slug: 'soluciones-con-ia-aplicada',
-    description: `Llevá tu negocio al siguiente nivel con inteligencia artificial práctica y accesible.
+    description: `La IA ya no es solo para empresas gigantes con presupuestos millonarios.
 
-Ideal para empresas que buscan innovar sin depender de grandes equipos técnicos.`,
+Hoy podés tener un asistente que responda consultas mientras dormís, que analice tus ventas y te diga qué está funcionando (y qué no), y que te ayude a predecir tendencias antes de que pasen.
+
+Todo sin necesidad de contratar un equipo técnico ni volverse experto en programación.
+
+Ideal para empresas que quieren innovar, atender mejor y tomar decisiones con datos reales, sin complicarse la vida.`,
     shortDescription:
-      'Llevá tu negocio al siguiente nivel con inteligencia artificial práctica y accesible.',
+      'IA que entiende tu negocio y te ayuda a vender más, atender mejor y decidir con datos reales.',
     price: 0, // Precio a consultar
     currency: 'ARS',
     images: [
-      '/images/products/placeholder.svg',
-      '/images/products/placeholder.svg',
-      '/images/products/placeholder.svg',
+      '/images/products/ia-aplicada.svg',
+      '/images/products/ia-aplicada.svg',
+      '/images/products/ia-aplicada.svg',
     ],
     category: 'Inteligencia Artificial',
     features: [
-      'Chatbots inteligentes y asistentes virtuales',
-      'Análisis predictivo de ventas y clientes',
-      'Modelos personalizados de IA para decisiones estratégicas',
+      'Chatbots que parecen humanos: Atienden consultas 24/7 como si fueras vos',
+      'Análisis predictivo simple: Te mostramos qué va a pasar con tus ventas y clientes',
+      'IA a tu medida: Modelos personalizados para decisiones estratégicas (sin necesidad de ser técnico)',
     ],
     inStock: true,
     createdAt: new Date().toISOString(),

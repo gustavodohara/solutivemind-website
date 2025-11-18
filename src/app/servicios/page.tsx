@@ -15,13 +15,15 @@ export default function ServiciosPage() {
     <div className="w-full px-4 py-10 sm:px-6 lg:px-8">
       {/* Header */}
       <div className="mb-10 space-y-4">
-        <h1 className="text-4xl font-bold tracking-tight">⚙️ Nuestros Servicios</h1>
+        <h1 className="text-4xl font-bold tracking-tight">⚙️ Soluciones que trabajan por vos</h1>
         <p className="text-muted-foreground text-lg">
-          Descubrí cómo la automatización inteligente puede transformar tu negocio, optimizar
-          procesos y liberar el potencial de tu equipo.
+          Si sentís que pasás el día apagando incendios en lugar de hacer crecer tu negocio, esto es para vos.
           <br />
-          En SolutiveMind, diseñamos soluciones a medida que combinan tecnología, estrategia e
-          inteligencia artificial.
+          <br />
+          En SolutiveMind automatizamos las tareas que te drenan energía: recordatorios, cobros, agendas, mails... todo lo que hoy hacés manual puede funcionar solo.
+          <br />
+          <br />
+          <strong>Te lo explicamos fácil. Te acompañamos siempre. Y lo ves funcionando en semanas.</strong>
         </p>
       </div>
 
